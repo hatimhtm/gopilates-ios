@@ -1,0 +1,831 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		062C8E083F5BD9308E4840F2 /* exercise_wrist_stretch.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 7ADF4D15D130E347CDCCD0A6 /* exercise_wrist_stretch.mp4 */; };
+		0D8766A575236EA743B85A04 /* exercise_teaser.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 222D8A78521FE23FA052979B /* exercise_teaser.mp4 */; };
+		104BCE00B186860EE5FE6264 /* StreakCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5EDE23046734537BBCC97A0 /* StreakCalendarView.swift */; };
+		10751AE230B65104D31CE2AD /* OnboardingBodyTypeTargetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1794201B211EA60D002E28B4 /* OnboardingBodyTypeTargetView.swift */; };
+		10C0E3DF48D9377D7EA70348 /* download_mp4s.py in Resources */ = {isa = PBXBuildFile; fileRef = 16E8A4FAB760A61D5BBAB2C0 /* download_mp4s.py */; };
+		1195E4963E337A323ADEEB8D /* OnboardingSocialProofMidView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF5058F87A1E1AF075AD547 /* OnboardingSocialProofMidView.swift */; };
+		127F24633C5A25809C2BA6F0 /* exercise_roll_up.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B06CE412EFB0CBA64D2D1014 /* exercise_roll_up.mp4 */; };
+		14997930F6EAD5193FFE068B /* onboarding_success.json in Resources */ = {isa = PBXBuildFile; fileRef = CA990683391228E801FABDA7 /* onboarding_success.json */; };
+		17290B0CE622FFE52DECF795 /* exercise_bed_leg_raise.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F4990F8655F57246A69ACE27 /* exercise_bed_leg_raise.mp4 */; };
+		1762C0DEC6B51B3259F62409 /* exercise_single_leg_stretch.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = FB050754242523663E7BE459 /* exercise_single_leg_stretch.mp4 */; };
+		1995D10568B38C38463BAAE9 /* slice_pb.py in Resources */ = {isa = PBXBuildFile; fileRef = A4AC0244164A7940DCF083FB /* slice_pb.py */; };
+		1AC8F8E90397310469AD7E70 /* exercise_dead_bug.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 622C53E46EBB09440FBDB8C8 /* exercise_dead_bug.mp4 */; };
+		1B39158E63F9BE812C6C0808 /* OnboardingFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E699170C04FECEC125DB8EB /* OnboardingFlow.swift */; };
+		1CB078F807F78DE2097B4A30 /* OnboardingFamiliarityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787F560ED8AAB7A01E5B223A /* OnboardingFamiliarityView.swift */; };
+		1D82B078B505756806313B18 /* HealthKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1323F313035D872B4E6E4965 /* HealthKitManager.swift */; };
+		20BD230A6CCD5E3ED42511A3 /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A2636B7206F20A9B148302 /* AudioManager.swift */; };
+		21C8297E371304028D2139C9 /* OnboardingMiniFuturePaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FA1EE32845736DB557595D /* OnboardingMiniFuturePaceView.swift */; };
+		256084EE75FB3CC609C6CC27 /* OnboardingAffirmation1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C40C4C29DBEC0D6995DC872 /* OnboardingAffirmation1View.swift */; };
+		27A3A7BD52D222142C260DF4 /* OnboardingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5564F93FE5C3976260FAAE5E /* OnboardingData.swift */; };
+		28F1373BAE072C8400D6F485 /* OnboardingFitnessLevelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7A01DF412C6240888F79C2 /* OnboardingFitnessLevelView.swift */; };
+		28F4DF39873A393332B69FB9 /* OnboardingDifficultyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04FF12913700C5A0A69AD80 /* OnboardingDifficultyView.swift */; };
+		298BB4D9FD08EC1B209DF131 /* playwright_scraper.py in Resources */ = {isa = PBXBuildFile; fileRef = AC28119152962301280388E7 /* playwright_scraper.py */; };
+		2AAD12A70940F87F9E2C7594 /* DesignSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721DD89E1BFF2355AEB4299C /* DesignSystem.swift */; };
+		2C043272A87664BEBBEE1E6A /* celebration.json in Resources */ = {isa = PBXBuildFile; fileRef = 860552178F20AC57B3C2CF2E /* celebration.json */; };
+		2CD3CB35CB1D182E7D6640A6 /* OnboardingFacadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A900365F9046AFF815D14B /* OnboardingFacadingView.swift */; };
+		2DBB9F1ADF0FF2F232B9042E /* OnboardingAgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8314E9D9F22FBBCED2539918 /* OnboardingAgeView.swift */; };
+		2EADFDEB31A2D9890F72C8CC /* crop_watermarks.py in Resources */ = {isa = PBXBuildFile; fileRef = 2AF6B0AF8D65176A0C0493BC /* crop_watermarks.py */; };
+		2FE1B7233F6AE06AA483F79A /* download_gifs.py in Resources */ = {isa = PBXBuildFile; fileRef = D4540A8B1ADECB93487DE71F /* download_gifs.py */; };
+		336FC239F8D08FA741179D0A /* OnboardingGoalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285ADD4423B881E45E9CD109 /* OnboardingGoalView.swift */; };
+		37AA45A2BCB3481B257E1BD7 /* OnboardingEmotionalGoalsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E6DAB29885DD7F8D12292C /* OnboardingEmotionalGoalsView.swift */; };
+		37C12647A4E497D931826263 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2875858091218F2F5C7DE404 /* ProfileView.swift */; };
+		389A8D72D183D0815E0AE626 /* exercise_wall_roll_down.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = BA6043D5D72C595F9C047D45 /* exercise_wall_roll_down.mp4 */; };
+		39797CCF377CDF14BE5F68B9 /* raw_generate.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1F1EAE268A64953D1D8B4634 /* raw_generate.txt */; };
+		3D0D26857F24FDB5AE1FE298 /* exercise_scissors.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = BD7D11A55377EB8F7D49A623 /* exercise_scissors.mp4 */; };
+		3D50B1A1031BBD90F4E77720 /* exercise_glutes.json in Resources */ = {isa = PBXBuildFile; fileRef = 970EB6E70DF1C8EC05DBE1DE /* exercise_glutes.json */; };
+		3FA8CFABBF619DB6C161784E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E49B340F39DCCE730B35F4B /* Assets.xcassets */; };
+		412871918F2AC63ABC57FA6F /* exercise_plank.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9F54F0E129550974766A0084 /* exercise_plank.mp4 */; };
+		41F88EFFD69EE48348892DB8 /* exercise_cat_cow_stretch.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 3E51F7C48F94EEA7389B37AA /* exercise_cat_cow_stretch.mp4 */; };
+		4322821B5DFBF7A5BBF61F4E /* WorkoutPlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3CC819D034E81EBAE2FB88C /* WorkoutPlan.swift */; };
+		474E27DC414DAC0F79BFE8F2 /* OnboardingBodyTypeCurrentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A442C2B681B5BC95CCA2065E /* OnboardingBodyTypeCurrentView.swift */; };
+		4796C3E6D02C15305ED9848D /* exercise_single_toe_taps.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8657BEC9E2BCAFA0FBAC802F /* exercise_single_toe_taps.mp4 */; };
+		4AA13365EE66C3F70AD2A75B /* OnboardingMotivationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BB82F2CBA3EDB557801644 /* OnboardingMotivationView.swift */; };
+		4BEA710D5643C17274CF9FA6 /* exercise_glute_bridge.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 5C3955CB44B913CC627D810E /* exercise_glute_bridge.mp4 */; };
+		519E72D069194A3BC7ACF921 /* ChallengeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349A5D433564D6BD97F0A8D8 /* ChallengeView.swift */; };
+		52152E2B3B0FBCD01D92B0AD /* exercise_gentle_bed_bridge.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 813C55241D4C333F98569808 /* exercise_gentle_bed_bridge.mp4 */; };
+		52E6577BF0B60E6456B49469 /* OnboardingTargetWeightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107F58A8E8F8C155C004FEAA /* OnboardingTargetWeightView.swift */; };
+		5332333FA677BF7D8AEFC7A7 /* OnboardingLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20DE6BD5D775BEBF7A8EF5B /* OnboardingLocationView.swift */; };
+		5408258CA40A581FB4F07385 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = E0A8801A7D601A8D5D63D053 /* Lottie */; };
+		5B380D067DA2E8ADF24B891B /* OnboardingFaceTransformView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4ADDA0A29EFB08CAAC3EDA3 /* OnboardingFaceTransformView.swift */; };
+		60EA0C25A306578517BFC63A /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CCF5CB3E3270CF8A5260ED /* DashboardView.swift */; };
+		61F09793A59634FF71F7DF06 /* extract_pb.py in Resources */ = {isa = PBXBuildFile; fileRef = 1BCF8A6B3DCA6C136F1596FB /* extract_pb.py */; };
+		6211A3D6880386646B6C420C /* exercise_double_toe_taps.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = DA545F63F8ABE6AB4307F938 /* exercise_double_toe_taps.mp4 */; };
+		62BAB6C2BF56A2E7F04065C3 /* ExerciseDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E21CFDC785536C1A650FC4 /* ExerciseDetailView.swift */; };
+		674D302236F6ACC7C1A958C7 /* HapticManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0716049483BE7FD24DC6D61B /* HapticManager.swift */; };
+		682C5F89847D9241D2C7A609 /* exercise_swan_dive_prep.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 72792DDB525A60DCAF37DED7 /* exercise_swan_dive_prep.mp4 */; };
+		6DC64DA40674CD04BADAEC76 /* WorkoutPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23B94221F178A2D01FC9949 /* WorkoutPlayerView.swift */; };
+		7135E169B33564D07083E39B /* WorkoutTimerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029166E9C3723E0555116618 /* WorkoutTimerService.swift */; };
+		727B52CABC3D688A936EA811 /* raw_engine.txt in Resources */ = {isa = PBXBuildFile; fileRef = 587046CB1A8582758C7821B9 /* raw_engine.txt */; };
+		79E5F7D0716AA736D7AAEDD0 /* exercise_seated_spine_stretch.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 19C79B65C4C95DA3ED4F8F08 /* exercise_seated_spine_stretch.mp4 */; };
+		7D6C03F52277F07DE28DEFB5 /* onboarding_greeting.json in Resources */ = {isa = PBXBuildFile; fileRef = E9D47B423CFA21C5B631FB54 /* onboarding_greeting.json */; };
+		832FB2CC9125879369DC65F4 /* OnboardingNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43112AAA797BB5EBC7F2956 /* OnboardingNameView.swift */; };
+		83334320EE90CC00233CD759 /* OnboardingFuturePacingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4515CCC0FB33E8ADA14257E7 /* OnboardingFuturePacingView.swift */; };
+		866802D76EEE0A3AF384A08B /* exercise_supine_spinal_twist.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 88BC0C15261B4F5D2333DDBA /* exercise_supine_spinal_twist.mp4 */; };
+		876A225E7C1BCFF964EF0DCD /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD330624A269C5F4883C079 /* HomeView.swift */; };
+		928E81F5D3C3249F598EE571 /* OnboardingCurrentWeightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DDFA6E117B9A13EC73AA2D /* OnboardingCurrentWeightView.swift */; };
+		9675CEF14A1359150B17364C /* OnboardingTrainingTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D4CB12A4FECB6E7B171018 /* OnboardingTrainingTypeView.swift */; };
+		9761573F0A3C3D0DDE3928EF /* download_exercise_media.py in Resources */ = {isa = PBXBuildFile; fileRef = 1E81FDB719E706CBB3702BE2 /* download_exercise_media.py */; };
+		9B4A9F58237EAFA451413FFA /* OnboardingActivityLevelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B02A9C782C3F87261558C10 /* OnboardingActivityLevelView.swift */; };
+		9B7287E094AA8F39B68E86EE /* VODLibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332971D02D0C7D24F6B3A25E /* VODLibraryView.swift */; };
+		9B9FEB038137A2C81EA59921 /* OnboardingBodyZoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4AD612512B9F910FEA526E /* OnboardingBodyZoneView.swift */; };
+		9C3BFF5E540542BCBB2EEEC3 /* exercise_plank_leg_lift.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 1071B2B77C619A8CDE169625 /* exercise_plank_leg_lift.mp4 */; };
+		9C7A4A76DF21C70B8512C91B /* onboarding_loading.json in Resources */ = {isa = PBXBuildFile; fileRef = DE4EF7F016AE912463AE7CB7 /* onboarding_loading.json */; };
+		9D69191E5392933A06144861 /* SubscriptionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED398276524DF6CD1872D471 /* SubscriptionManager.swift */; };
+		9D7AFA77AA1018BCE5EAA82A /* LazyWorkoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C72BDAABDC9CB288B3673A4 /* LazyWorkoutView.swift */; };
+		A0A354B6065C002DB9B0C6BF /* exercise_kneeling_plank.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 5825AE58413BF966B675A531 /* exercise_kneeling_plank.mp4 */; };
+		A167A676FA01D95BC18F124D /* LottieAnimationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70E44675680597EE2DABC03 /* LottieAnimationService.swift */; };
+		A3E16A97DFFD9BB46D4EDEA2 /* OnboardingInjuriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6774B9F9F77527BC1FDF182 /* OnboardingInjuriesView.swift */; };
+		A812F5856CE06D845AE00BBC /* OnboardingGreetingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520CA469394C9AB14EB31456 /* OnboardingGreetingView.swift */; };
+		A9541F04D028EF52DFE9B15E /* exercise_spine_twist.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B93639DB2F84BA1CDE618BD3 /* exercise_spine_twist.mp4 */; };
+		A9638DFDC38D7B3798571C63 /* GoPilatesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE7C2EC101B4CD9621FA9E8 /* GoPilatesApp.swift */; };
+		ABF7571AAD4793A70FAF2F8D /* exercise_bicycle.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B0B129558EA9A4C6275B69C6 /* exercise_bicycle.mp4 */; };
+		AE2756BC5D4931631D45D83C /* exercise_thoracic_rotation.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 6DE86EDB9FB85EBFDEBEC1A0 /* exercise_thoracic_rotation.mp4 */; };
+		AE910E18EA4AFF47AB9E8792 /* exercise_supine_leg_lift.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 117FF94767E419C3DF5B263C /* exercise_supine_leg_lift.mp4 */; };
+		AF6DB7E72F5F020C00287C55 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D453E1013F992754563C913 /* HealthKit.framework */; };
+		B4C7A1F5D821D26C04CCA93F /* exercise_bodyweight_squats.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 001F9E4BBF9DCFACAA4F48C0 /* exercise_bodyweight_squats.mp4 */; };
+		B5BC6BE2BC98C3B38D6C3D80 /* OnboardingFinalProjectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CF02A09D9594C585F4F94C /* OnboardingFinalProjectionView.swift */; };
+		B752B27966C43F661D08A664 /* OnboardingHeightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F95509DD00E663311C2FDB3 /* OnboardingHeightView.swift */; };
+		B7CFB50ED7052EC67622CDCE /* exercise_fullbody.json in Resources */ = {isa = PBXBuildFile; fileRef = 40BF966A62A3FEF805530F52 /* exercise_fullbody.json */; };
+		BC2D94DFE02EA99C3C1D17D1 /* OnboardingFlexibilityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1DF8AFABDA91D1788E1920 /* OnboardingFlexibilityView.swift */; };
+		BC9B39CB624B99F2B0C863F0 /* OnboardingPaywallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88B7BAE2E2C011B3FA7D76B /* OnboardingPaywallView.swift */; };
+		BD1FB1D24627C5B85FC01C3F /* GIFView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00D62369024F14C4D7598E4 /* GIFView.swift */; };
+		BE9D71789DE12801DA7B353A /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A00B9D8A62AAA545C3019C0 /* Exercise.swift */; };
+		BF5938DD8457B26C0D6BED3B /* OnboardingValidationViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF0A35B7F5E5FE62D6EA78E /* OnboardingValidationViews.swift */; };
+		C10BB5C5BFA2BDA4DB7121BD /* exercise_wall_pulse_squats.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 1FA9ACFA8B6EE06AE6975838 /* exercise_wall_pulse_squats.mp4 */; };
+		C2551013BE44B7FE321D248D /* exercise_core.json in Resources */ = {isa = PBXBuildFile; fileRef = 3AABDB404095E0FF8C09844D /* exercise_core.json */; };
+		C84C1FEAB7AF273BC466F3B3 /* OnboardingSocialProof100kView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BC54E2F0784D410F8AA63B /* OnboardingSocialProof100kView.swift */; };
+		CF0353757AE6A69C37D48809 /* RevenueCat in Frameworks */ = {isa = PBXBuildFile; productRef = 2D14AD12C4F7BA56247E64EB /* RevenueCat */; };
+		D0EF0A1BE982262490457E9F /* exercise_pilates_push_up.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0625B6A6B823EAD7124A3E03 /* exercise_pilates_push_up.mp4 */; };
+		D29E4B65D62028D3565C252A /* OnboardingPotentialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF30AA796EA5FDA95C0B3446 /* OnboardingPotentialView.swift */; };
+		D2E1C5A0AAA10C4AA1330157 /* ExerciseAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C6F4254568D41408094C54 /* ExerciseAnimations.swift */; };
+		D52E893B4F8D5B0D16641D16 /* generate_math_gifs.py in Resources */ = {isa = PBXBuildFile; fileRef = 738C2BB26FC301CD70A90CD6 /* generate_math_gifs.py */; };
+		D6B4F630DE4A43EFF16167E6 /* OnboardingRewardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9565F075465C88F15F157B15 /* OnboardingRewardView.swift */; };
+		DF1998B502F59EB30A3C7346 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9DADD9A4FF36ABD28AFA2C /* LottieView.swift */; };
+		DFE1AA6681FA8CFF27CCC246 /* exercise_pigeon_stretch.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B08541191839F0E9B465C964 /* exercise_pigeon_stretch.mp4 */; };
+		E152B2F8C65A307E638932B7 /* RevenueCatUI in Frameworks */ = {isa = PBXBuildFile; productRef = 7BAD65C98D69049FAC8A8BB7 /* RevenueCatUI */; };
+		E4DD5289BBD2D53FF609ECAC /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D976D2F79803B2CC02EB8B /* UserProfile.swift */; };
+		E63E963D8F26C595FB2842F7 /* OnboardingDailyLifeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEC68A4496973D421D42B6E /* OnboardingDailyLifeView.swift */; };
+		E6E6F47A1BF643E851DDB23E /* exercise_the_hundred.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F76DD18DAB0AF8DC9AD1E182 /* exercise_the_hundred.mp4 */; };
+		E9CFD5359C64088280C812F5 /* pb_strings.txt in Resources */ = {isa = PBXBuildFile; fileRef = F8E94A795115257DECEACFFD /* pb_strings.txt */; };
+		EA814AA51128E00DC172CC49 /* SharedOnboardingComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4AC695420EF4852D3D92FB /* SharedOnboardingComponents.swift */; };
+		ECA1CDF2C43857BF6B06873E /* create_exercise_gifs.py in Resources */ = {isa = PBXBuildFile; fileRef = 83839D4159D0DA97A4891DFD /* create_exercise_gifs.py */; };
+		F2096C92D478E6B357D2ADC2 /* OnboardingCardioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F93D7337829C79963F62B5 /* OnboardingCardioView.swift */; };
+		F3805970620CD2DD55A27863 /* OnboardingWeightProjectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E170925433CEC587A16C1D7F /* OnboardingWeightProjectionView.swift */; };
+		FCEB2624AEB7540E6457DA78 /* hd_unbranded_scraper.py in Resources */ = {isa = PBXBuildFile; fileRef = 80B9F4839A0A3DCA4C8751AE /* hd_unbranded_scraper.py */; };
+		FD26EFEF6BC3F586320E2E52 /* exercise_double_leg_stretch.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = FB31FD32846C3F33AB5D2D92 /* exercise_double_leg_stretch.mp4 */; };
+		FD7881D90E902675B0196655 /* CollectionDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCA0D3AADADFA815A5943A6 /* CollectionDetailView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		001F9E4BBF9DCFACAA4F48C0 /* exercise_bodyweight_squats.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = exercise_bodyweight_squats.mp4; sourceTree = "<group>"; };
+		029166E9C3723E0555116618 /* WorkoutTimerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutTimerService.swift; sourceTree = "<group>"; };
+		03BB82F2CBA3EDB557801644 /* OnboardingMotivationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingMotivationView.swift; sourceTree = "<group>"; };
+		0625B6A6B823EAD7124A3E03 /* exercise_pilates_push_up.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = exercise_pilates_push_up.mp4; sourceTree = "<group>"; };
+		0716049483BE7FD24DC6D61B /* HapticManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticManager.swift; sourceTree = "<group>"; };
+		0A00B9D8A62AAA545C3019C0 /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
+		1071B2B77C619A8CDE169625 /* exercise_plank_leg_lift.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = exercise_plank_leg_lift.mp4; sourceTree = "<group>"; };
+		107F58A8E8F8C155C004FEAA /* OnboardingTargetWeightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingTargetWeightView.swift; sourceTree = "<group>"; };
+		117FF94767E419C3DF5B263C /* exercise_supine_leg_lift.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = exercise_supine_leg_lift.mp4; sourceTree = "<group>"; };
+		1323F313035D872B4E6E4965 /* HealthKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitManager.swift; sourceTree = "<group>"; };
+		16E8A4FAB760A61D5BBAB2C0 /* download_mp4s.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = download_mp4s.py; sourceTree = "<group>"; };
+		1794201B211EA60D002E28B4 /* OnboardingBodyTypeTargetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingBodyTypeTargetView.swift; sourceTree = "<group>"; };
+		19C79B65C4C95DA3ED4F8F08 /* exercise_seated_spine_stretch.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = exercise_seated_spine_stretch.mp4; sourceTree = "<group>"; };
+		1BCF8A6B3DCA6C136F1596FB /* extract_pb.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = extract_pb.py; sourceTree = "<group>"; };
+		1E81FDB719E706CBB3702BE2 /* download_exercise_media.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = download_exercise_media.py; sourceTree = "<group>"; };
+		1F1EAE268A64953D1D8B4634 /* raw_generate.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = raw_generate.txt; sourceTree = "<group>"; };
+		1FA9ACFA8B6EE06AE6975838 /* exercise_wall_pulse_squats.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = exercise_wall_pulse_squats.mp4; sourceTree = "<group>"; };
+		21D23ED11B221AF48558EB61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		222D8A78521FE23FA052979B /* exercise_teaser.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = exercise_teaser.mp4; sourceTree = "<group>"; };
+		285ADD4423B881E45E9CD109 /* OnboardingGoalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingGoalView.swift; sourceTree = "<group>"; };
+		2875858091218F2F5C7DE404 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		2AF6B0AF8D65176A0C0493BC /* crop_watermarks.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = crop_watermarks.py; sourceTree = "<group>"; };
+		332971D02D0C7D24F6B3A25E /* VODLibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VODLibraryView.swift; sourceTree = "<group>"; };
+		349A5D433564D6BD97F0A8D8 /* ChallengeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeView.swift; sourceTree = "<group>"; };
+		3AABDB404095E0FF8C09844D /* exercise_core.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = exercise_core.json; sourceTree = "<group>"; };
+		3D453E1013F992754563C913 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		3E51F7C48F94EEA7389B37AA /* exercise_cat_cow_stretch.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = exercise_cat_cow_stretch.mp4; sourceTree = "<group>"; };
+		40BF966A62A3FEF805530F52 /* exercise_fullbody.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = exercise_fullbody.json; sourceTree = "<group>"; };
+		44E21CFDC785536C1A650FC4 /* ExerciseDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseDetailView.swift; sourceTree = "<group>"; };
+		4515CCC0FB33E8ADA14257E7 /* OnboardingFuturePacingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingFuturePacingView.swift; sourceTree = "<group>"; };
+		4E49B340F39DCCE730B35F4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4EE2448D8AC8120870BB215B /* GoPilates.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoPilates.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		520CA469394C9AB14EB31456 /* OnboardingGreetingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingGreetingView.swift; sourceTree = "<group>"; };
+		5564F93FE5C3976260FAAE5E /* OnboardingData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingData.swift; sourceTree = "<group>"; };
+		5825AE58413BF966B675A531 /* exercise_kneeling_plank.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = exercise_kneeling_plank.mp4; sourceTree = "<group>"; };
+		587046CB1A8582758C7821B9 /* raw_engine.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = raw_engine.txt; sourceTree = "<group>"; };
+		5C3955CB44B913CC627D810E /* exercise_glute_bridge.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = exercise_glute_bridge.mp4; sourceTree = "<group>"; };
+		5C40C4C29DBEC0D6995DC872 /* OnboardingAffirmation1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingAffirmation1View.swift; sourceTree = "<group>"; };
+		5C72BDAABDC9CB288B3673A4 /* LazyWorkoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyWorkoutView.swift; sourceTree = "<group>"; };
+		5CE7C2EC101B4CD9621FA9E8 /* GoPilatesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoPilatesApp.swift; sourceTree = "<group>"; };
+		5F4AD612512B9F910FEA526E /* OnboardingBodyZoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingBodyZoneView.swift; sourceTree = "<group>"; };
+		5F95509DD00E663311C2FDB3 /* OnboardingHeightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingHeightView.swift; sourceTree = "<group>"; };
+		622C53E46EBB09440FBDB8C8 /* exercise_dead_bug.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = exercise_dead_bug.mp4; sourceTree = "<group>"; };
+		6912D7369F2BFB72CF9FCEC5 /* GoPilates.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GoPilates.entitlements; sourceTree = "<group>"; };
+		6DE86EDB9FB85EBFDEBEC1A0 /* exercise_thoracic_rotation.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = exercise_thoracic_rotation.mp4; sourceTree = "<group>"; };
+		721DD89E1BFF2355AEB4299C /* DesignSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSystem.swift; sourceTree = "<group>"; };
+		72792DDB525A60DCAF37DED7 /* exercise_swan_dive_prep.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = exercise_swan_dive_prep.mp4; sourceTree = "<group>"; };
+		738C2BB26FC301CD70A90CD6 /* generate_math_gifs.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = generate_math_gifs.py; sourceTree = "<group>"; };
+		73BC54E2F0784D410F8AA63B /* OnboardingSocialProof100kView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSocialProof100kView.swift; sourceTree = "<group>"; };
+		787F560ED8AAB7A01E5B223A /* OnboardingFamiliarityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingFamiliarityView.swift; sourceTree = "<group>"; };
+		7ADF4D15D130E347CDCCD0A6 /* exercise_wrist_stretch.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = exercise_wrist_stretch.mp4; sourceTree = "<group>"; };
+		7D9DADD9A4FF36ABD28AFA2C /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
+		7FCA0D3AADADFA815A5943A6 /* CollectionDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionDetailView.swift; sourceTree = "<group>"; };
+		80B9F4839A0A3DCA4C8751AE /* hd_unbranded_scraper.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = hd_unbranded_scraper.py; sourceTree = "<group>"; };
+		813C55241D4C333F98569808 /* exercise_gentle_bed_bridge.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = exercise_gentle_bed_bridge.mp4; sourceTree = "<group>"; };
+		8314E9D9F22FBBCED2539918 /* OnboardingAgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingAgeView.swift; sourceTree = "<group>"; };
+		83839D4159D0DA97A4891DFD /* create_exercise_gifs.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = create_exercise_gifs.py; sourceTree = "<group>"; };
+		860552178F20AC57B3C2CF2E /* celebration.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = celebration.json; sourceTree = "<group>"; };
+		8657BEC9E2BCAFA0FBAC802F /* exercise_single_toe_taps.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = exercise_single_toe_taps.mp4; sourceTree = "<group>"; };
+		88BC0C15261B4F5D2333DDBA /* exercise_supine_spinal_twist.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = exercise_supine_spinal_twist.mp4; sourceTree = "<group>"; };
+		8E699170C04FECEC125DB8EB /* OnboardingFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingFlow.swift; sourceTree = "<group>"; };
+		8F1DF8AFABDA91D1788E1920 /* OnboardingFlexibilityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingFlexibilityView.swift; sourceTree = "<group>"; };
+		94C6F4254568D41408094C54 /* ExerciseAnimations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseAnimations.swift; sourceTree = "<group>"; };
+		9565F075465C88F15F157B15 /* OnboardingRewardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingRewardView.swift; sourceTree = "<group>"; };
+		96A2636B7206F20A9B148302 /* AudioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
+		970EB6E70DF1C8EC05DBE1DE /* exercise_glutes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = exercise_glutes.json; sourceTree = "<group>"; };
+		9B02A9C782C3F87261558C10 /* OnboardingActivityLevelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingActivityLevelView.swift; sourceTree = "<group>"; };
+		9D7A01DF412C6240888F79C2 /* OnboardingFitnessLevelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingFitnessLevelView.swift; sourceTree = "<group>"; };
+		9F54F0E129550974766A0084 /* exercise_plank.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = exercise_plank.mp4; sourceTree = "<group>"; };
+		A1D976D2F79803B2CC02EB8B /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		A20DE6BD5D775BEBF7A8EF5B /* OnboardingLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingLocationView.swift; sourceTree = "<group>"; };
+		A2E6DAB29885DD7F8D12292C /* OnboardingEmotionalGoalsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingEmotionalGoalsView.swift; sourceTree = "<group>"; };
+		A442C2B681B5BC95CCA2065E /* OnboardingBodyTypeCurrentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingBodyTypeCurrentView.swift; sourceTree = "<group>"; };
+		A4AC0244164A7940DCF083FB /* slice_pb.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = slice_pb.py; sourceTree = "<group>"; };
+		A4DDFA6E117B9A13EC73AA2D /* OnboardingCurrentWeightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCurrentWeightView.swift; sourceTree = "<group>"; };
+		ABD330624A269C5F4883C079 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		AC28119152962301280388E7 /* playwright_scraper.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = playwright_scraper.py; sourceTree = "<group>"; };
+		B06CE412EFB0CBA64D2D1014 /* exercise_roll_up.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = exercise_roll_up.mp4; sourceTree = "<group>"; };
+		B08541191839F0E9B465C964 /* exercise_pigeon_stretch.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = exercise_pigeon_stretch.mp4; sourceTree = "<group>"; };
+		B0B129558EA9A4C6275B69C6 /* exercise_bicycle.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = exercise_bicycle.mp4; sourceTree = "<group>"; };
+		B88B7BAE2E2C011B3FA7D76B /* OnboardingPaywallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPaywallView.swift; sourceTree = "<group>"; };
+		B93639DB2F84BA1CDE618BD3 /* exercise_spine_twist.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = exercise_spine_twist.mp4; sourceTree = "<group>"; };
+		BA6043D5D72C595F9C047D45 /* exercise_wall_roll_down.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = exercise_wall_roll_down.mp4; sourceTree = "<group>"; };
+		BD7D11A55377EB8F7D49A623 /* exercise_scissors.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = exercise_scissors.mp4; sourceTree = "<group>"; };
+		C23B94221F178A2D01FC9949 /* WorkoutPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutPlayerView.swift; sourceTree = "<group>"; };
+		C43112AAA797BB5EBC7F2956 /* OnboardingNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingNameView.swift; sourceTree = "<group>"; };
+		C5EDE23046734537BBCC97A0 /* StreakCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreakCalendarView.swift; sourceTree = "<group>"; };
+		C6774B9F9F77527BC1FDF182 /* OnboardingInjuriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingInjuriesView.swift; sourceTree = "<group>"; };
+		C70E44675680597EE2DABC03 /* LottieAnimationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieAnimationService.swift; sourceTree = "<group>"; };
+		C9D4CB12A4FECB6E7B171018 /* OnboardingTrainingTypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingTrainingTypeView.swift; sourceTree = "<group>"; };
+		CA990683391228E801FABDA7 /* onboarding_success.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = onboarding_success.json; sourceTree = "<group>"; };
+		CAEC68A4496973D421D42B6E /* OnboardingDailyLifeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingDailyLifeView.swift; sourceTree = "<group>"; };
+		CCF5058F87A1E1AF075AD547 /* OnboardingSocialProofMidView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSocialProofMidView.swift; sourceTree = "<group>"; };
+		D00D62369024F14C4D7598E4 /* GIFView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFView.swift; sourceTree = "<group>"; };
+		D04FF12913700C5A0A69AD80 /* OnboardingDifficultyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingDifficultyView.swift; sourceTree = "<group>"; };
+		D1A900365F9046AFF815D14B /* OnboardingFacadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingFacadingView.swift; sourceTree = "<group>"; };
+		D4540A8B1ADECB93487DE71F /* download_gifs.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = download_gifs.py; sourceTree = "<group>"; };
+		D5CF02A09D9594C585F4F94C /* OnboardingFinalProjectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingFinalProjectionView.swift; sourceTree = "<group>"; };
+		DA545F63F8ABE6AB4307F938 /* exercise_double_toe_taps.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = exercise_double_toe_taps.mp4; sourceTree = "<group>"; };
+		DE4EF7F016AE912463AE7CB7 /* onboarding_loading.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = onboarding_loading.json; sourceTree = "<group>"; };
+		E170925433CEC587A16C1D7F /* OnboardingWeightProjectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingWeightProjectionView.swift; sourceTree = "<group>"; };
+		E2F93D7337829C79963F62B5 /* OnboardingCardioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCardioView.swift; sourceTree = "<group>"; };
+		E3CC819D034E81EBAE2FB88C /* WorkoutPlan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutPlan.swift; sourceTree = "<group>"; };
+		E4ADDA0A29EFB08CAAC3EDA3 /* OnboardingFaceTransformView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingFaceTransformView.swift; sourceTree = "<group>"; };
+		E6CCF5CB3E3270CF8A5260ED /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		E7FA1EE32845736DB557595D /* OnboardingMiniFuturePaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingMiniFuturePaceView.swift; sourceTree = "<group>"; };
+		E9D47B423CFA21C5B631FB54 /* onboarding_greeting.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = onboarding_greeting.json; sourceTree = "<group>"; };
+		ED398276524DF6CD1872D471 /* SubscriptionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionManager.swift; sourceTree = "<group>"; };
+		EDF0A35B7F5E5FE62D6EA78E /* OnboardingValidationViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingValidationViews.swift; sourceTree = "<group>"; };
+		EF30AA796EA5FDA95C0B3446 /* OnboardingPotentialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPotentialView.swift; sourceTree = "<group>"; };
+		EF4AC695420EF4852D3D92FB /* SharedOnboardingComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedOnboardingComponents.swift; sourceTree = "<group>"; };
+		F4990F8655F57246A69ACE27 /* exercise_bed_leg_raise.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = exercise_bed_leg_raise.mp4; sourceTree = "<group>"; };
+		F76DD18DAB0AF8DC9AD1E182 /* exercise_the_hundred.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = exercise_the_hundred.mp4; sourceTree = "<group>"; };
+		F8E94A795115257DECEACFFD /* pb_strings.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = pb_strings.txt; sourceTree = "<group>"; };
+		FB050754242523663E7BE459 /* exercise_single_leg_stretch.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = exercise_single_leg_stretch.mp4; sourceTree = "<group>"; };
+		FB31FD32846C3F33AB5D2D92 /* exercise_double_leg_stretch.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = exercise_double_leg_stretch.mp4; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E60A880303F7B90E433D469A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5408258CA40A581FB4F07385 /* Lottie in Frameworks */,
+				AF6DB7E72F5F020C00287C55 /* HealthKit.framework in Frameworks */,
+				CF0353757AE6A69C37D48809 /* RevenueCat in Frameworks */,
+				E152B2F8C65A307E638932B7 /* RevenueCatUI in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0329201CB08832377C29CE9D /* SVGAnimations */ = {
+			isa = PBXGroup;
+			children = (
+				80B9F4839A0A3DCA4C8751AE /* hd_unbranded_scraper.py */,
+			);
+			path = SVGAnimations;
+			sourceTree = "<group>";
+		};
+		04C64BF28C910C741FA3B2DA /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				349A5D433564D6BD97F0A8D8 /* ChallengeView.swift */,
+				E6CCF5CB3E3270CF8A5260ED /* DashboardView.swift */,
+				ABD330624A269C5F4883C079 /* HomeView.swift */,
+				C5EDE23046734537BBCC97A0 /* StreakCalendarView.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		09D6A37F0466CE9DE9CB9EDB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		29A5F9FE7E3FCFAD213D2D59 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0A00B9D8A62AAA545C3019C0 /* Exercise.swift */,
+				A1D976D2F79803B2CC02EB8B /* UserProfile.swift */,
+				E3CC819D034E81EBAE2FB88C /* WorkoutPlan.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		39ACE7DF36A96CC459667E67 /* ExerciseVideos */ = {
+			isa = PBXGroup;
+			children = (
+				F4990F8655F57246A69ACE27 /* exercise_bed_leg_raise.mp4 */,
+				B0B129558EA9A4C6275B69C6 /* exercise_bicycle.mp4 */,
+				001F9E4BBF9DCFACAA4F48C0 /* exercise_bodyweight_squats.mp4 */,
+				3E51F7C48F94EEA7389B37AA /* exercise_cat_cow_stretch.mp4 */,
+				622C53E46EBB09440FBDB8C8 /* exercise_dead_bug.mp4 */,
+				FB31FD32846C3F33AB5D2D92 /* exercise_double_leg_stretch.mp4 */,
+				DA545F63F8ABE6AB4307F938 /* exercise_double_toe_taps.mp4 */,
+				813C55241D4C333F98569808 /* exercise_gentle_bed_bridge.mp4 */,
+				5C3955CB44B913CC627D810E /* exercise_glute_bridge.mp4 */,
+				5825AE58413BF966B675A531 /* exercise_kneeling_plank.mp4 */,
+				B08541191839F0E9B465C964 /* exercise_pigeon_stretch.mp4 */,
+				0625B6A6B823EAD7124A3E03 /* exercise_pilates_push_up.mp4 */,
+				1071B2B77C619A8CDE169625 /* exercise_plank_leg_lift.mp4 */,
+				9F54F0E129550974766A0084 /* exercise_plank.mp4 */,
+				B06CE412EFB0CBA64D2D1014 /* exercise_roll_up.mp4 */,
+				BD7D11A55377EB8F7D49A623 /* exercise_scissors.mp4 */,
+				19C79B65C4C95DA3ED4F8F08 /* exercise_seated_spine_stretch.mp4 */,
+				FB050754242523663E7BE459 /* exercise_single_leg_stretch.mp4 */,
+				8657BEC9E2BCAFA0FBAC802F /* exercise_single_toe_taps.mp4 */,
+				B93639DB2F84BA1CDE618BD3 /* exercise_spine_twist.mp4 */,
+				117FF94767E419C3DF5B263C /* exercise_supine_leg_lift.mp4 */,
+				88BC0C15261B4F5D2333DDBA /* exercise_supine_spinal_twist.mp4 */,
+				72792DDB525A60DCAF37DED7 /* exercise_swan_dive_prep.mp4 */,
+				222D8A78521FE23FA052979B /* exercise_teaser.mp4 */,
+				F76DD18DAB0AF8DC9AD1E182 /* exercise_the_hundred.mp4 */,
+				6DE86EDB9FB85EBFDEBEC1A0 /* exercise_thoracic_rotation.mp4 */,
+				1FA9ACFA8B6EE06AE6975838 /* exercise_wall_pulse_squats.mp4 */,
+				BA6043D5D72C595F9C047D45 /* exercise_wall_roll_down.mp4 */,
+				7ADF4D15D130E347CDCCD0A6 /* exercise_wrist_stretch.mp4 */,
+			);
+			path = ExerciseVideos;
+			sourceTree = "<group>";
+		};
+		4A2DCFF513498E6B2AA2D2A6 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				9B02A9C782C3F87261558C10 /* OnboardingActivityLevelView.swift */,
+				5C40C4C29DBEC0D6995DC872 /* OnboardingAffirmation1View.swift */,
+				8314E9D9F22FBBCED2539918 /* OnboardingAgeView.swift */,
+				A442C2B681B5BC95CCA2065E /* OnboardingBodyTypeCurrentView.swift */,
+				1794201B211EA60D002E28B4 /* OnboardingBodyTypeTargetView.swift */,
+				5F4AD612512B9F910FEA526E /* OnboardingBodyZoneView.swift */,
+				E2F93D7337829C79963F62B5 /* OnboardingCardioView.swift */,
+				A4DDFA6E117B9A13EC73AA2D /* OnboardingCurrentWeightView.swift */,
+				CAEC68A4496973D421D42B6E /* OnboardingDailyLifeView.swift */,
+				5564F93FE5C3976260FAAE5E /* OnboardingData.swift */,
+				D04FF12913700C5A0A69AD80 /* OnboardingDifficultyView.swift */,
+				A2E6DAB29885DD7F8D12292C /* OnboardingEmotionalGoalsView.swift */,
+				D1A900365F9046AFF815D14B /* OnboardingFacadingView.swift */,
+				E4ADDA0A29EFB08CAAC3EDA3 /* OnboardingFaceTransformView.swift */,
+				787F560ED8AAB7A01E5B223A /* OnboardingFamiliarityView.swift */,
+				D5CF02A09D9594C585F4F94C /* OnboardingFinalProjectionView.swift */,
+				9D7A01DF412C6240888F79C2 /* OnboardingFitnessLevelView.swift */,
+				8F1DF8AFABDA91D1788E1920 /* OnboardingFlexibilityView.swift */,
+				8E699170C04FECEC125DB8EB /* OnboardingFlow.swift */,
+				4515CCC0FB33E8ADA14257E7 /* OnboardingFuturePacingView.swift */,
+				285ADD4423B881E45E9CD109 /* OnboardingGoalView.swift */,
+				520CA469394C9AB14EB31456 /* OnboardingGreetingView.swift */,
+				5F95509DD00E663311C2FDB3 /* OnboardingHeightView.swift */,
+				C6774B9F9F77527BC1FDF182 /* OnboardingInjuriesView.swift */,
+				A20DE6BD5D775BEBF7A8EF5B /* OnboardingLocationView.swift */,
+				E7FA1EE32845736DB557595D /* OnboardingMiniFuturePaceView.swift */,
+				03BB82F2CBA3EDB557801644 /* OnboardingMotivationView.swift */,
+				C43112AAA797BB5EBC7F2956 /* OnboardingNameView.swift */,
+				B88B7BAE2E2C011B3FA7D76B /* OnboardingPaywallView.swift */,
+				EF30AA796EA5FDA95C0B3446 /* OnboardingPotentialView.swift */,
+				9565F075465C88F15F157B15 /* OnboardingRewardView.swift */,
+				73BC54E2F0784D410F8AA63B /* OnboardingSocialProof100kView.swift */,
+				CCF5058F87A1E1AF075AD547 /* OnboardingSocialProofMidView.swift */,
+				107F58A8E8F8C155C004FEAA /* OnboardingTargetWeightView.swift */,
+				C9D4CB12A4FECB6E7B171018 /* OnboardingTrainingTypeView.swift */,
+				EDF0A35B7F5E5FE62D6EA78E /* OnboardingValidationViews.swift */,
+				E170925433CEC587A16C1D7F /* OnboardingWeightProjectionView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		A58001B7A61454EFF0E33082 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				96A2636B7206F20A9B148302 /* AudioManager.swift */,
+				1323F313035D872B4E6E4965 /* HealthKitManager.swift */,
+				C70E44675680597EE2DABC03 /* LottieAnimationService.swift */,
+				ED398276524DF6CD1872D471 /* SubscriptionManager.swift */,
+				029166E9C3723E0555116618 /* WorkoutTimerService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		AD2D6D9A8C445AF2EA27FF28 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				860552178F20AC57B3C2CF2E /* celebration.json */,
+				3AABDB404095E0FF8C09844D /* exercise_core.json */,
+				40BF966A62A3FEF805530F52 /* exercise_fullbody.json */,
+				970EB6E70DF1C8EC05DBE1DE /* exercise_glutes.json */,
+				E9D47B423CFA21C5B631FB54 /* onboarding_greeting.json */,
+				DE4EF7F016AE912463AE7CB7 /* onboarding_loading.json */,
+				CA990683391228E801FABDA7 /* onboarding_success.json */,
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
+		BB9DB153606619A93C97A650 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4EE2448D8AC8120870BB215B /* GoPilates.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C201B0DB909C144D0070A50C /* Workout */ = {
+			isa = PBXGroup;
+			children = (
+				5C72BDAABDC9CB288B3673A4 /* LazyWorkoutView.swift */,
+				C23B94221F178A2D01FC9949 /* WorkoutPlayerView.swift */,
+			);
+			path = Workout;
+			sourceTree = "<group>";
+		};
+		C2B90D9DD3B354DBFC652DCF /* Design */ = {
+			isa = PBXGroup;
+			children = (
+				721DD89E1BFF2355AEB4299C /* DesignSystem.swift */,
+				94C6F4254568D41408094C54 /* ExerciseAnimations.swift */,
+				D00D62369024F14C4D7598E4 /* GIFView.swift */,
+				0716049483BE7FD24DC6D61B /* HapticManager.swift */,
+				7D9DADD9A4FF36ABD28AFA2C /* LottieView.swift */,
+				EF4AC695420EF4852D3D92FB /* SharedOnboardingComponents.swift */,
+			);
+			path = Design;
+			sourceTree = "<group>";
+		};
+		C2DA8D785967212CF0F6772C = {
+			isa = PBXGroup;
+			children = (
+				FFDAF27BEEB8B95DE58A89CD /* GoPilates */,
+				DEB7CE4DE143175C868B1DBF /* Frameworks */,
+				BB9DB153606619A93C97A650 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DEB7CE4DE143175C868B1DBF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3D453E1013F992754563C913 /* HealthKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E3F1C9E301731DDBC1367DA5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4E49B340F39DCCE730B35F4B /* Assets.xcassets */,
+				83839D4159D0DA97A4891DFD /* create_exercise_gifs.py */,
+				2AF6B0AF8D65176A0C0493BC /* crop_watermarks.py */,
+				1E81FDB719E706CBB3702BE2 /* download_exercise_media.py */,
+				D4540A8B1ADECB93487DE71F /* download_gifs.py */,
+				16E8A4FAB760A61D5BBAB2C0 /* download_mp4s.py */,
+				1BCF8A6B3DCA6C136F1596FB /* extract_pb.py */,
+				738C2BB26FC301CD70A90CD6 /* generate_math_gifs.py */,
+				21D23ED11B221AF48558EB61 /* Info.plist */,
+				F8E94A795115257DECEACFFD /* pb_strings.txt */,
+				AC28119152962301280388E7 /* playwright_scraper.py */,
+				587046CB1A8582758C7821B9 /* raw_engine.txt */,
+				1F1EAE268A64953D1D8B4634 /* raw_generate.txt */,
+				A4AC0244164A7940DCF083FB /* slice_pb.py */,
+				AD2D6D9A8C445AF2EA27FF28 /* Animations */,
+				39ACE7DF36A96CC459667E67 /* ExerciseVideos */,
+				09D6A37F0466CE9DE9CB9EDB /* Resources */,
+				0329201CB08832377C29CE9D /* SVGAnimations */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E8B050B24E4CE387FDA10B40 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				7FCA0D3AADADFA815A5943A6 /* CollectionDetailView.swift */,
+				44E21CFDC785536C1A650FC4 /* ExerciseDetailView.swift */,
+				332971D02D0C7D24F6B3A25E /* VODLibraryView.swift */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		FE7878A3CC704EE42613B0BB /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				2875858091218F2F5C7DE404 /* ProfileView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		FE794E31F27F00153841298B /* App */ = {
+			isa = PBXGroup;
+			children = (
+				5CE7C2EC101B4CD9621FA9E8 /* GoPilatesApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		FFDAF27BEEB8B95DE58A89CD /* GoPilates */ = {
+			isa = PBXGroup;
+			children = (
+				6912D7369F2BFB72CF9FCEC5 /* GoPilates.entitlements */,
+				FE794E31F27F00153841298B /* App */,
+				04C64BF28C910C741FA3B2DA /* Dashboard */,
+				C2B90D9DD3B354DBFC652DCF /* Design */,
+				E8B050B24E4CE387FDA10B40 /* Library */,
+				29A5F9FE7E3FCFAD213D2D59 /* Models */,
+				4A2DCFF513498E6B2AA2D2A6 /* Onboarding */,
+				FE7878A3CC704EE42613B0BB /* Profile */,
+				E3F1C9E301731DDBC1367DA5 /* Resources */,
+				A58001B7A61454EFF0E33082 /* Services */,
+				C201B0DB909C144D0070A50C /* Workout */,
+			);
+			path = GoPilates;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4F61F2033E96962809ADAFC8 /* GoPilates */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7BCF708725AF7C0D17F66128 /* Build configuration list for PBXNativeTarget "GoPilates" */;
+			buildPhases = (
+				336A4ECBDBF4BE2048F47F15 /* Sources */,
+				D9D4024CE58AA28020938F9F /* Resources */,
+				E60A880303F7B90E433D469A /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GoPilates;
+			packageProductDependencies = (
+				E0A8801A7D601A8D5D63D053 /* Lottie */,
+				2D14AD12C4F7BA56247E64EB /* RevenueCat */,
+				7BAD65C98D69049FAC8A8BB7 /* RevenueCatUI */,
+			);
+			productName = GoPilates;
+			productReference = 4EE2448D8AC8120870BB215B /* GoPilates.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5F813A8AA717D5098561DB77 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					4F61F2033E96962809ADAFC8 = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 1DC604BD4376C38D2C5B26FD /* Build configuration list for PBXProject "GoPilates" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = C2DA8D785967212CF0F6772C;
+			packageReferences = (
+				74BA1CA6217693F142835118 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				DECEA18DBC01478F5B405CB5 /* XCRemoteSwiftPackageReference "purchases-ios-spm" */,
+			);
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4F61F2033E96962809ADAFC8 /* GoPilates */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D9D4024CE58AA28020938F9F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FA8CFABBF619DB6C161784E /* Assets.xcassets in Resources */,
+				2C043272A87664BEBBEE1E6A /* celebration.json in Resources */,
+				ECA1CDF2C43857BF6B06873E /* create_exercise_gifs.py in Resources */,
+				2EADFDEB31A2D9890F72C8CC /* crop_watermarks.py in Resources */,
+				9761573F0A3C3D0DDE3928EF /* download_exercise_media.py in Resources */,
+				2FE1B7233F6AE06AA483F79A /* download_gifs.py in Resources */,
+				10C0E3DF48D9377D7EA70348 /* download_mp4s.py in Resources */,
+				17290B0CE622FFE52DECF795 /* exercise_bed_leg_raise.mp4 in Resources */,
+				ABF7571AAD4793A70FAF2F8D /* exercise_bicycle.mp4 in Resources */,
+				B4C7A1F5D821D26C04CCA93F /* exercise_bodyweight_squats.mp4 in Resources */,
+				41F88EFFD69EE48348892DB8 /* exercise_cat_cow_stretch.mp4 in Resources */,
+				C2551013BE44B7FE321D248D /* exercise_core.json in Resources */,
+				1AC8F8E90397310469AD7E70 /* exercise_dead_bug.mp4 in Resources */,
+				FD26EFEF6BC3F586320E2E52 /* exercise_double_leg_stretch.mp4 in Resources */,
+				6211A3D6880386646B6C420C /* exercise_double_toe_taps.mp4 in Resources */,
+				B7CFB50ED7052EC67622CDCE /* exercise_fullbody.json in Resources */,
+				52152E2B3B0FBCD01D92B0AD /* exercise_gentle_bed_bridge.mp4 in Resources */,
+				4BEA710D5643C17274CF9FA6 /* exercise_glute_bridge.mp4 in Resources */,
+				3D50B1A1031BBD90F4E77720 /* exercise_glutes.json in Resources */,
+				A0A354B6065C002DB9B0C6BF /* exercise_kneeling_plank.mp4 in Resources */,
+				DFE1AA6681FA8CFF27CCC246 /* exercise_pigeon_stretch.mp4 in Resources */,
+				D0EF0A1BE982262490457E9F /* exercise_pilates_push_up.mp4 in Resources */,
+				412871918F2AC63ABC57FA6F /* exercise_plank.mp4 in Resources */,
+				9C3BFF5E540542BCBB2EEEC3 /* exercise_plank_leg_lift.mp4 in Resources */,
+				127F24633C5A25809C2BA6F0 /* exercise_roll_up.mp4 in Resources */,
+				3D0D26857F24FDB5AE1FE298 /* exercise_scissors.mp4 in Resources */,
+				79E5F7D0716AA736D7AAEDD0 /* exercise_seated_spine_stretch.mp4 in Resources */,
+				1762C0DEC6B51B3259F62409 /* exercise_single_leg_stretch.mp4 in Resources */,
+				4796C3E6D02C15305ED9848D /* exercise_single_toe_taps.mp4 in Resources */,
+				A9541F04D028EF52DFE9B15E /* exercise_spine_twist.mp4 in Resources */,
+				AE910E18EA4AFF47AB9E8792 /* exercise_supine_leg_lift.mp4 in Resources */,
+				866802D76EEE0A3AF384A08B /* exercise_supine_spinal_twist.mp4 in Resources */,
+				682C5F89847D9241D2C7A609 /* exercise_swan_dive_prep.mp4 in Resources */,
+				0D8766A575236EA743B85A04 /* exercise_teaser.mp4 in Resources */,
+				E6E6F47A1BF643E851DDB23E /* exercise_the_hundred.mp4 in Resources */,
+				AE2756BC5D4931631D45D83C /* exercise_thoracic_rotation.mp4 in Resources */,
+				C10BB5C5BFA2BDA4DB7121BD /* exercise_wall_pulse_squats.mp4 in Resources */,
+				389A8D72D183D0815E0AE626 /* exercise_wall_roll_down.mp4 in Resources */,
+				062C8E083F5BD9308E4840F2 /* exercise_wrist_stretch.mp4 in Resources */,
+				61F09793A59634FF71F7DF06 /* extract_pb.py in Resources */,
+				D52E893B4F8D5B0D16641D16 /* generate_math_gifs.py in Resources */,
+				FCEB2624AEB7540E6457DA78 /* hd_unbranded_scraper.py in Resources */,
+				7D6C03F52277F07DE28DEFB5 /* onboarding_greeting.json in Resources */,
+				9C7A4A76DF21C70B8512C91B /* onboarding_loading.json in Resources */,
+				14997930F6EAD5193FFE068B /* onboarding_success.json in Resources */,
+				E9CFD5359C64088280C812F5 /* pb_strings.txt in Resources */,
+				298BB4D9FD08EC1B209DF131 /* playwright_scraper.py in Resources */,
+				727B52CABC3D688A936EA811 /* raw_engine.txt in Resources */,
+				39797CCF377CDF14BE5F68B9 /* raw_generate.txt in Resources */,
+				1995D10568B38C38463BAAE9 /* slice_pb.py in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		336A4ECBDBF4BE2048F47F15 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20BD230A6CCD5E3ED42511A3 /* AudioManager.swift in Sources */,
+				519E72D069194A3BC7ACF921 /* ChallengeView.swift in Sources */,
+				FD7881D90E902675B0196655 /* CollectionDetailView.swift in Sources */,
+				60EA0C25A306578517BFC63A /* DashboardView.swift in Sources */,
+				2AAD12A70940F87F9E2C7594 /* DesignSystem.swift in Sources */,
+				BE9D71789DE12801DA7B353A /* Exercise.swift in Sources */,
+				D2E1C5A0AAA10C4AA1330157 /* ExerciseAnimations.swift in Sources */,
+				62BAB6C2BF56A2E7F04065C3 /* ExerciseDetailView.swift in Sources */,
+				BD1FB1D24627C5B85FC01C3F /* GIFView.swift in Sources */,
+				A9638DFDC38D7B3798571C63 /* GoPilatesApp.swift in Sources */,
+				674D302236F6ACC7C1A958C7 /* HapticManager.swift in Sources */,
+				1D82B078B505756806313B18 /* HealthKitManager.swift in Sources */,
+				876A225E7C1BCFF964EF0DCD /* HomeView.swift in Sources */,
+				9D7AFA77AA1018BCE5EAA82A /* LazyWorkoutView.swift in Sources */,
+				A167A676FA01D95BC18F124D /* LottieAnimationService.swift in Sources */,
+				DF1998B502F59EB30A3C7346 /* LottieView.swift in Sources */,
+				9B4A9F58237EAFA451413FFA /* OnboardingActivityLevelView.swift in Sources */,
+				256084EE75FB3CC609C6CC27 /* OnboardingAffirmation1View.swift in Sources */,
+				2DBB9F1ADF0FF2F232B9042E /* OnboardingAgeView.swift in Sources */,
+				474E27DC414DAC0F79BFE8F2 /* OnboardingBodyTypeCurrentView.swift in Sources */,
+				10751AE230B65104D31CE2AD /* OnboardingBodyTypeTargetView.swift in Sources */,
+				9B9FEB038137A2C81EA59921 /* OnboardingBodyZoneView.swift in Sources */,
+				F2096C92D478E6B357D2ADC2 /* OnboardingCardioView.swift in Sources */,
+				928E81F5D3C3249F598EE571 /* OnboardingCurrentWeightView.swift in Sources */,
+				E63E963D8F26C595FB2842F7 /* OnboardingDailyLifeView.swift in Sources */,
+				27A3A7BD52D222142C260DF4 /* OnboardingData.swift in Sources */,
+				28F4DF39873A393332B69FB9 /* OnboardingDifficultyView.swift in Sources */,
+				37AA45A2BCB3481B257E1BD7 /* OnboardingEmotionalGoalsView.swift in Sources */,
+				2CD3CB35CB1D182E7D6640A6 /* OnboardingFacadingView.swift in Sources */,
+				5B380D067DA2E8ADF24B891B /* OnboardingFaceTransformView.swift in Sources */,
+				1CB078F807F78DE2097B4A30 /* OnboardingFamiliarityView.swift in Sources */,
+				B5BC6BE2BC98C3B38D6C3D80 /* OnboardingFinalProjectionView.swift in Sources */,
+				28F1373BAE072C8400D6F485 /* OnboardingFitnessLevelView.swift in Sources */,
+				BC2D94DFE02EA99C3C1D17D1 /* OnboardingFlexibilityView.swift in Sources */,
+				1B39158E63F9BE812C6C0808 /* OnboardingFlow.swift in Sources */,
+				83334320EE90CC00233CD759 /* OnboardingFuturePacingView.swift in Sources */,
+				336FC239F8D08FA741179D0A /* OnboardingGoalView.swift in Sources */,
+				A812F5856CE06D845AE00BBC /* OnboardingGreetingView.swift in Sources */,
+				B752B27966C43F661D08A664 /* OnboardingHeightView.swift in Sources */,
+				A3E16A97DFFD9BB46D4EDEA2 /* OnboardingInjuriesView.swift in Sources */,
+				5332333FA677BF7D8AEFC7A7 /* OnboardingLocationView.swift in Sources */,
+				21C8297E371304028D2139C9 /* OnboardingMiniFuturePaceView.swift in Sources */,
+				4AA13365EE66C3F70AD2A75B /* OnboardingMotivationView.swift in Sources */,
+				832FB2CC9125879369DC65F4 /* OnboardingNameView.swift in Sources */,
+				BC9B39CB624B99F2B0C863F0 /* OnboardingPaywallView.swift in Sources */,
+				D29E4B65D62028D3565C252A /* OnboardingPotentialView.swift in Sources */,
+				D6B4F630DE4A43EFF16167E6 /* OnboardingRewardView.swift in Sources */,
+				C84C1FEAB7AF273BC466F3B3 /* OnboardingSocialProof100kView.swift in Sources */,
+				1195E4963E337A323ADEEB8D /* OnboardingSocialProofMidView.swift in Sources */,
+				52E6577BF0B60E6456B49469 /* OnboardingTargetWeightView.swift in Sources */,
+				9675CEF14A1359150B17364C /* OnboardingTrainingTypeView.swift in Sources */,
+				BF5938DD8457B26C0D6BED3B /* OnboardingValidationViews.swift in Sources */,
+				F3805970620CD2DD55A27863 /* OnboardingWeightProjectionView.swift in Sources */,
+				37C12647A4E497D931826263 /* ProfileView.swift in Sources */,
+				EA814AA51128E00DC172CC49 /* SharedOnboardingComponents.swift in Sources */,
+				104BCE00B186860EE5FE6264 /* StreakCalendarView.swift in Sources */,
+				9D69191E5392933A06144861 /* SubscriptionManager.swift in Sources */,
+				E4DD5289BBD2D53FF609ECAC /* UserProfile.swift in Sources */,
+				9B7287E094AA8F39B68E86EE /* VODLibraryView.swift in Sources */,
+				4322821B5DFBF7A5BBF61F4E /* WorkoutPlan.swift in Sources */,
+				6DC64DA40674CD04BADAEC76 /* WorkoutPlayerView.swift in Sources */,
+				7135E169B33564D07083E39B /* WorkoutTimerService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		5E4E32CBBB9664E3E3FB41DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = GoPilates/GoPilates.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ULHJAB7ZT3;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = GoPilates/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gopilates.app;
+				PRODUCT_NAME = GoPilates;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		C2FBDB1F4507EBFDE086E406 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EFE5C0F2F5E067F3BCDBC88D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = GoPilates/GoPilates.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ULHJAB7ZT3;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = GoPilates/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gopilates.app;
+				PRODUCT_NAME = GoPilates;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		F5AE9EFF5FBAA655AC0FDEBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DC604BD4376C38D2C5B26FD /* Build configuration list for PBXProject "GoPilates" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2FBDB1F4507EBFDE086E406 /* Debug */,
+				F5AE9EFF5FBAA655AC0FDEBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		7BCF708725AF7C0D17F66128 /* Build configuration list for PBXNativeTarget "GoPilates" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E4E32CBBB9664E3E3FB41DF /* Debug */,
+				EFE5C0F2F5E067F3BCDBC88D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		74BA1CA6217693F142835118 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 4.5.0;
+			};
+		};
+		DECEA18DBC01478F5B405CB5 /* XCRemoteSwiftPackageReference "purchases-ios-spm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RevenueCat/purchases-ios-spm.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 5.16.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2D14AD12C4F7BA56247E64EB /* RevenueCat */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DECEA18DBC01478F5B405CB5 /* XCRemoteSwiftPackageReference "purchases-ios-spm" */;
+			productName = RevenueCat;
+		};
+		7BAD65C98D69049FAC8A8BB7 /* RevenueCatUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DECEA18DBC01478F5B405CB5 /* XCRemoteSwiftPackageReference "purchases-ios-spm" */;
+			productName = RevenueCatUI;
+		};
+		E0A8801A7D601A8D5D63D053 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 74BA1CA6217693F142835118 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 5F813A8AA717D5098561DB77 /* Project object */;
+}
