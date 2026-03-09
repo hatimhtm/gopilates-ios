@@ -89,7 +89,13 @@
 		ABF7571AAD4793A70FAF2F8D /* exercise_bicycle.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B0B129558EA9A4C6275B69C6 /* exercise_bicycle.mp4 */; };
 		AE2756BC5D4931631D45D83C /* exercise_thoracic_rotation.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 6DE86EDB9FB85EBFDEBEC1A0 /* exercise_thoracic_rotation.mp4 */; };
 		AE910E18EA4AFF47AB9E8792 /* exercise_supine_leg_lift.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 117FF94767E419C3DF5B263C /* exercise_supine_leg_lift.mp4 */; };
+		AF2402D92F5F8B5900C13D44 /* ReceiptParser in Frameworks */ = {isa = PBXBuildFile; productRef = AF2402D82F5F8B5900C13D44 /* ReceiptParser */; };
+		AF2402DB2F5F8B5900C13D44 /* RevenueCat in Frameworks */ = {isa = PBXBuildFile; productRef = AF2402DA2F5F8B5900C13D44 /* RevenueCat */; };
+		AF2402DD2F5F8B5900C13D44 /* RevenueCatUI in Frameworks */ = {isa = PBXBuildFile; productRef = AF2402DC2F5F8B5900C13D44 /* RevenueCatUI */; };
+		AF2402DF2F5F8B5900C13D44 /* RevenueCat_CustomEntitlementComputation in Frameworks */ = {isa = PBXBuildFile; productRef = AF2402DE2F5F8B5900C13D44 /* RevenueCat_CustomEntitlementComputation */; };
 		AF6DB7E72F5F020C00287C55 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D453E1013F992754563C913 /* HealthKit.framework */; };
+		AF6DB7EC2F5F794A00287C55 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = AF6DB7EB2F5F794A00287C55 /* Lottie */; };
+		AF6DB7EE2F5F794A00287C55 /* Lottie-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = AF6DB7ED2F5F794A00287C55 /* Lottie-Dynamic */; };
 		B4C7A1F5D821D26C04CCA93F /* exercise_bodyweight_squats.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 001F9E4BBF9DCFACAA4F48C0 /* exercise_bodyweight_squats.mp4 */; };
 		B5BC6BE2BC98C3B38D6C3D80 /* OnboardingFinalProjectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CF02A09D9594C585F4F94C /* OnboardingFinalProjectionView.swift */; };
 		B752B27966C43F661D08A664 /* OnboardingHeightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F95509DD00E663311C2FDB3 /* OnboardingHeightView.swift */; };
@@ -247,6 +253,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF6DB7E72F5F020C00287C55 /* HealthKit.framework in Frameworks */,
+				AF6DB7EC2F5F794A00287C55 /* Lottie in Frameworks */,
+				AF2402DD2F5F8B5900C13D44 /* RevenueCatUI in Frameworks */,
+				AF2402DF2F5F8B5900C13D44 /* RevenueCat_CustomEntitlementComputation in Frameworks */,
+				AF2402DB2F5F8B5900C13D44 /* RevenueCat in Frameworks */,
+				AF2402D92F5F8B5900C13D44 /* ReceiptParser in Frameworks */,
+				AF6DB7EE2F5F794A00287C55 /* Lottie-Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -528,6 +540,12 @@
 			);
 			name = GoPilates;
 			packageProductDependencies = (
+				AF6DB7EB2F5F794A00287C55 /* Lottie */,
+				AF6DB7ED2F5F794A00287C55 /* Lottie-Dynamic */,
+				AF2402D82F5F8B5900C13D44 /* ReceiptParser */,
+				AF2402DA2F5F8B5900C13D44 /* RevenueCat */,
+				AF2402DC2F5F8B5900C13D44 /* RevenueCatUI */,
+				AF2402DE2F5F8B5900C13D44 /* RevenueCat_CustomEntitlementComputation */,
 			);
 			productName = GoPilates;
 			productReference = 4EE2448D8AC8120870BB215B /* GoPilates.app */;
@@ -557,6 +575,8 @@
 			);
 			mainGroup = C2DA8D785967212CF0F6772C;
 			packageReferences = (
+				AF6DB7EA2F5F794A00287C55 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				AF2402D72F5F8B5900C13D44 /* XCRemoteSwiftPackageReference "purchases-ios" */,
 			);
 			projectDirPath = "";
 			projectRoot = "";
@@ -778,6 +798,58 @@
 			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AF2402D72F5F8B5900C13D44 /* XCRemoteSwiftPackageReference "purchases-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RevenueCat/purchases-ios.git";
+			requirement = {
+				kind = exactVersion;
+				version = 5.16.0;
+			};
+		};
+		AF6DB7EA2F5F794A00287C55 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = exactVersion;
+				version = 4.5.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AF2402D82F5F8B5900C13D44 /* ReceiptParser */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AF2402D72F5F8B5900C13D44 /* XCRemoteSwiftPackageReference "purchases-ios" */;
+			productName = ReceiptParser;
+		};
+		AF2402DA2F5F8B5900C13D44 /* RevenueCat */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AF2402D72F5F8B5900C13D44 /* XCRemoteSwiftPackageReference "purchases-ios" */;
+			productName = RevenueCat;
+		};
+		AF2402DC2F5F8B5900C13D44 /* RevenueCatUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AF2402D72F5F8B5900C13D44 /* XCRemoteSwiftPackageReference "purchases-ios" */;
+			productName = RevenueCatUI;
+		};
+		AF2402DE2F5F8B5900C13D44 /* RevenueCat_CustomEntitlementComputation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AF2402D72F5F8B5900C13D44 /* XCRemoteSwiftPackageReference "purchases-ios" */;
+			productName = RevenueCat_CustomEntitlementComputation;
+		};
+		AF6DB7EB2F5F794A00287C55 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AF6DB7EA2F5F794A00287C55 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+		AF6DB7ED2F5F794A00287C55 /* Lottie-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AF6DB7EA2F5F794A00287C55 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = "Lottie-Dynamic";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5F813A8AA717D5098561DB77 /* Project object */;
 }
