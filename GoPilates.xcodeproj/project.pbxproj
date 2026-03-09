@@ -54,7 +54,6 @@
 		52152E2B3B0FBCD01D92B0AD /* exercise_gentle_bed_bridge.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 813C55241D4C333F98569808 /* exercise_gentle_bed_bridge.mp4 */; };
 		52E6577BF0B60E6456B49469 /* OnboardingTargetWeightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107F58A8E8F8C155C004FEAA /* OnboardingTargetWeightView.swift */; };
 		5332333FA677BF7D8AEFC7A7 /* OnboardingLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20DE6BD5D775BEBF7A8EF5B /* OnboardingLocationView.swift */; };
-		5408258CA40A581FB4F07385 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = E0A8801A7D601A8D5D63D053 /* Lottie */; };
 		5B380D067DA2E8ADF24B891B /* OnboardingFaceTransformView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4ADDA0A29EFB08CAAC3EDA3 /* OnboardingFaceTransformView.swift */; };
 		60EA0C25A306578517BFC63A /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CCF5CB3E3270CF8A5260ED /* DashboardView.swift */; };
 		61F09793A59634FF71F7DF06 /* extract_pb.py in Resources */ = {isa = PBXBuildFile; fileRef = 1BCF8A6B3DCA6C136F1596FB /* extract_pb.py */; };
@@ -103,7 +102,6 @@
 		C10BB5C5BFA2BDA4DB7121BD /* exercise_wall_pulse_squats.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 1FA9ACFA8B6EE06AE6975838 /* exercise_wall_pulse_squats.mp4 */; };
 		C2551013BE44B7FE321D248D /* exercise_core.json in Resources */ = {isa = PBXBuildFile; fileRef = 3AABDB404095E0FF8C09844D /* exercise_core.json */; };
 		C84C1FEAB7AF273BC466F3B3 /* OnboardingSocialProof100kView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BC54E2F0784D410F8AA63B /* OnboardingSocialProof100kView.swift */; };
-		CF0353757AE6A69C37D48809 /* RevenueCat in Frameworks */ = {isa = PBXBuildFile; productRef = 2D14AD12C4F7BA56247E64EB /* RevenueCat */; };
 		D0EF0A1BE982262490457E9F /* exercise_pilates_push_up.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0625B6A6B823EAD7124A3E03 /* exercise_pilates_push_up.mp4 */; };
 		D29E4B65D62028D3565C252A /* OnboardingPotentialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF30AA796EA5FDA95C0B3446 /* OnboardingPotentialView.swift */; };
 		D2E1C5A0AAA10C4AA1330157 /* ExerciseAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C6F4254568D41408094C54 /* ExerciseAnimations.swift */; };
@@ -111,7 +109,6 @@
 		D6B4F630DE4A43EFF16167E6 /* OnboardingRewardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9565F075465C88F15F157B15 /* OnboardingRewardView.swift */; };
 		DF1998B502F59EB30A3C7346 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9DADD9A4FF36ABD28AFA2C /* LottieView.swift */; };
 		DFE1AA6681FA8CFF27CCC246 /* exercise_pigeon_stretch.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B08541191839F0E9B465C964 /* exercise_pigeon_stretch.mp4 */; };
-		E152B2F8C65A307E638932B7 /* RevenueCatUI in Frameworks */ = {isa = PBXBuildFile; productRef = 7BAD65C98D69049FAC8A8BB7 /* RevenueCatUI */; };
 		E4DD5289BBD2D53FF609ECAC /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D976D2F79803B2CC02EB8B /* UserProfile.swift */; };
 		E63E963D8F26C595FB2842F7 /* OnboardingDailyLifeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEC68A4496973D421D42B6E /* OnboardingDailyLifeView.swift */; };
 		E6E6F47A1BF643E851DDB23E /* exercise_the_hundred.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F76DD18DAB0AF8DC9AD1E182 /* exercise_the_hundred.mp4 */; };
@@ -249,10 +246,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5408258CA40A581FB4F07385 /* Lottie in Frameworks */,
 				AF6DB7E72F5F020C00287C55 /* HealthKit.framework in Frameworks */,
-				CF0353757AE6A69C37D48809 /* RevenueCat in Frameworks */,
-				E152B2F8C65A307E638932B7 /* RevenueCatUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -534,9 +528,6 @@
 			);
 			name = GoPilates;
 			packageProductDependencies = (
-				E0A8801A7D601A8D5D63D053 /* Lottie */,
-				2D14AD12C4F7BA56247E64EB /* RevenueCat */,
-				7BAD65C98D69049FAC8A8BB7 /* RevenueCatUI */,
 			);
 			productName = GoPilates;
 			productReference = 4EE2448D8AC8120870BB215B /* GoPilates.app */;
@@ -566,8 +557,6 @@
 			);
 			mainGroup = C2DA8D785967212CF0F6772C;
 			packageReferences = (
-				74BA1CA6217693F142835118 /* XCRemoteSwiftPackageReference "lottie-ios" */,
-				DECEA18DBC01478F5B405CB5 /* XCRemoteSwiftPackageReference "purchases-ios-spm" */,
 			);
 			projectDirPath = "";
 			projectRoot = "";
@@ -789,43 +778,6 @@
 			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		74BA1CA6217693F142835118 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
-			requirement = {
-				kind = upToNextMinorVersion;
-				minimumVersion = 4.5.0;
-			};
-		};
-		DECEA18DBC01478F5B405CB5 /* XCRemoteSwiftPackageReference "purchases-ios-spm" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/RevenueCat/purchases-ios-spm.git";
-			requirement = {
-				kind = upToNextMinorVersion;
-				minimumVersion = 5.16.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		2D14AD12C4F7BA56247E64EB /* RevenueCat */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = DECEA18DBC01478F5B405CB5 /* XCRemoteSwiftPackageReference "purchases-ios-spm" */;
-			productName = RevenueCat;
-		};
-		7BAD65C98D69049FAC8A8BB7 /* RevenueCatUI */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = DECEA18DBC01478F5B405CB5 /* XCRemoteSwiftPackageReference "purchases-ios-spm" */;
-			productName = RevenueCatUI;
-		};
-		E0A8801A7D601A8D5D63D053 /* Lottie */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 74BA1CA6217693F142835118 /* XCRemoteSwiftPackageReference "lottie-ios" */;
-			productName = Lottie;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5F813A8AA717D5098561DB77 /* Project object */;
 }
