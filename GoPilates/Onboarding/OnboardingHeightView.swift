@@ -19,7 +19,8 @@ struct OnboardingHeightView: View {
     }
 
     var body: some View {
-        OnboardingScreenLayout(step: 5, onBack: onBack) {
+        @Bindable var data = data
+        return OnboardingScreenLayout(step: 5, onBack: onBack) {
             VStack(spacing: 0) {
                 Text("Quelle taille\nfaites-vous ?")
                     .font(.system(size: 26, weight: .bold))
