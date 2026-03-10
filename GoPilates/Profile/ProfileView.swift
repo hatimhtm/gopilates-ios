@@ -353,9 +353,9 @@ struct ProfileView: View {
             SafariView(url: URL(string: "https://magnificent-crostata-3fa347.netlify.app/termsandconditions")!)
                 .ignoresSafeArea()
         }
-        .presentCustomerCenter(isPresented: $showCustomerCenter) {
+        .presentCustomerCenter(isPresented: $showCustomerCenter, onDismiss: {
             showCustomerCenter = false
-        }
+        })
     }
 
     // MARK: - About Sheet

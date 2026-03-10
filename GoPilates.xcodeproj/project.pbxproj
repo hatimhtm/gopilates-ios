@@ -95,7 +95,6 @@
 		AF2402E82F5F96A300C13D44 /* RevenueCat_CustomEntitlementComputation in Frameworks */ = {isa = PBXBuildFile; productRef = AF2402E72F5F96A300C13D44 /* RevenueCat_CustomEntitlementComputation */; };
 		AF6DB7E72F5F020C00287C55 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D453E1013F992754563C913 /* HealthKit.framework */; };
 		AF6DB7EC2F5F794A00287C55 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = AF6DB7EB2F5F794A00287C55 /* Lottie */; };
-		AF6DB7EE2F5F794A00287C55 /* Lottie-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = AF6DB7ED2F5F794A00287C55 /* Lottie-Dynamic */; };
 		B4C7A1F5D821D26C04CCA93F /* exercise_bodyweight_squats.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 001F9E4BBF9DCFACAA4F48C0 /* exercise_bodyweight_squats.mp4 */; };
 		B5BC6BE2BC98C3B38D6C3D80 /* OnboardingFinalProjectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CF02A09D9594C585F4F94C /* OnboardingFinalProjectionView.swift */; };
 		B752B27966C43F661D08A664 /* OnboardingHeightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F95509DD00E663311C2FDB3 /* OnboardingHeightView.swift */; };
@@ -258,7 +257,6 @@
 				AF2402E82F5F96A300C13D44 /* RevenueCat_CustomEntitlementComputation in Frameworks */,
 				AF2402E42F5F96A300C13D44 /* RevenueCat in Frameworks */,
 				AF2402E22F5F96A300C13D44 /* ReceiptParser in Frameworks */,
-				AF6DB7EE2F5F794A00287C55 /* Lottie-Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -541,7 +539,6 @@
 			name = GoPilates;
 			packageProductDependencies = (
 				AF6DB7EB2F5F794A00287C55 /* Lottie */,
-				AF6DB7ED2F5F794A00287C55 /* Lottie-Dynamic */,
 				AF2402E12F5F96A300C13D44 /* ReceiptParser */,
 				AF2402E32F5F96A300C13D44 /* RevenueCat */,
 				AF2402E52F5F96A300C13D44 /* RevenueCatUI */,
@@ -845,11 +842,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = AF6DB7EA2F5F794A00287C55 /* XCRemoteSwiftPackageReference "lottie-ios" */;
 			productName = Lottie;
-		};
-		AF6DB7ED2F5F794A00287C55 /* Lottie-Dynamic */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = AF6DB7EA2F5F794A00287C55 /* XCRemoteSwiftPackageReference "lottie-ios" */;
-			productName = "Lottie-Dynamic";
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

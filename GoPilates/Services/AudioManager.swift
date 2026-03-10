@@ -6,7 +6,7 @@ import AVFoundation
 class AudioManager: NSObject, ObservableObject {
     static let shared = AudioManager()
 
-    private let synthesizer = AVSpeechSynthesizer()
+    nonisolated(unsafe) private let synthesizer = AVSpeechSynthesizer()
     @Published var isSpeaking: Bool = false
 
     /// The preferred female French voice identifier
