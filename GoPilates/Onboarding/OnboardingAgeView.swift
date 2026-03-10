@@ -6,7 +6,8 @@ struct OnboardingAgeView: View {
     var onBack: () -> Void
 
     var body: some View {
-        OnboardingScreenLayout(step: 12, onBack: onBack) {
+        @Bindable var data = data
+        return OnboardingScreenLayout(step: 12, onBack: onBack) {
             VStack(spacing: 0) {
                 Text("Quel âge as-tu ?")
                     .font(.system(size: 26, weight: .bold))

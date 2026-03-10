@@ -14,7 +14,7 @@ struct LazyWorkoutView: View {
     @EnvironmentObject var userProfile: UserProfile
     var onComplete: (() -> Void)?
 
-    @Environment(\.presentationMode) var presentationMode
+    @Environment(\.dismiss) private var dismiss
     @State private var showPlayer = false
 
     private var dailyExercises: [PilatesExercise] {
@@ -67,7 +67,7 @@ struct LazyWorkoutView: View {
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
                     Button(action: {
-                        presentationMode.wrappedValue.dismiss()
+                        dismiss()
                     }) {
                         Image(systemName: "xmark")
                             .font(.system(size: 14, weight: .semibold))
@@ -82,7 +82,7 @@ struct LazyWorkoutView: View {
                     onComplete: {
                         userProfile.markSeanceDouceCompletedToday()
                         onComplete?()
-                        presentationMode.wrappedValue.dismiss()
+                        dismiss()
                     }
                 )
             }

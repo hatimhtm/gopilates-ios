@@ -5,7 +5,6 @@ import SwiftUI
 struct ExerciseDetailView: View {
     let exercise: PilatesExercise
 
-    @Environment(\.presentationMode) var presentationMode
     @State private var showPlayer = false
 
     var body: some View {
