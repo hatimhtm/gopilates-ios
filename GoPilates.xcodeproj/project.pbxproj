@@ -92,7 +92,6 @@
 		AF2402E22F5F96A300C13D44 /* ReceiptParser in Frameworks */ = {isa = PBXBuildFile; productRef = AF2402E12F5F96A300C13D44 /* ReceiptParser */; };
 		AF2402E42F5F96A300C13D44 /* RevenueCat in Frameworks */ = {isa = PBXBuildFile; productRef = AF2402E32F5F96A300C13D44 /* RevenueCat */; };
 		AF2402E62F5F96A300C13D44 /* RevenueCatUI in Frameworks */ = {isa = PBXBuildFile; productRef = AF2402E52F5F96A300C13D44 /* RevenueCatUI */; };
-		AF2402E82F5F96A300C13D44 /* RevenueCat_CustomEntitlementComputation in Frameworks */ = {isa = PBXBuildFile; productRef = AF2402E72F5F96A300C13D44 /* RevenueCat_CustomEntitlementComputation */; };
 		AF6DB7E72F5F020C00287C55 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D453E1013F992754563C913 /* HealthKit.framework */; };
 		AF6DB7EC2F5F794A00287C55 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = AF6DB7EB2F5F794A00287C55 /* Lottie */; };
 		B4C7A1F5D821D26C04CCA93F /* exercise_bodyweight_squats.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 001F9E4BBF9DCFACAA4F48C0 /* exercise_bodyweight_squats.mp4 */; };
@@ -254,7 +253,6 @@
 				AF6DB7E72F5F020C00287C55 /* HealthKit.framework in Frameworks */,
 				AF6DB7EC2F5F794A00287C55 /* Lottie in Frameworks */,
 				AF2402E62F5F96A300C13D44 /* RevenueCatUI in Frameworks */,
-				AF2402E82F5F96A300C13D44 /* RevenueCat_CustomEntitlementComputation in Frameworks */,
 				AF2402E42F5F96A300C13D44 /* RevenueCat in Frameworks */,
 				AF2402E22F5F96A300C13D44 /* ReceiptParser in Frameworks */,
 			);
@@ -542,7 +540,6 @@
 				AF2402E12F5F96A300C13D44 /* ReceiptParser */,
 				AF2402E32F5F96A300C13D44 /* RevenueCat */,
 				AF2402E52F5F96A300C13D44 /* RevenueCatUI */,
-				AF2402E72F5F96A300C13D44 /* RevenueCat_CustomEntitlementComputation */,
 			);
 			productName = GoPilates;
 			productReference = 4EE2448D8AC8120870BB215B /* GoPilates.app */;
@@ -832,11 +829,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = AF2402E02F5F96A300C13D44 /* XCRemoteSwiftPackageReference "purchases-ios" */;
 			productName = RevenueCatUI;
-		};
-		AF2402E72F5F96A300C13D44 /* RevenueCat_CustomEntitlementComputation */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = AF2402E02F5F96A300C13D44 /* XCRemoteSwiftPackageReference "purchases-ios" */;
-			productName = RevenueCat_CustomEntitlementComputation;
 		};
 		AF6DB7EB2F5F794A00287C55 /* Lottie */ = {
 			isa = XCSwiftPackageProductDependency;
