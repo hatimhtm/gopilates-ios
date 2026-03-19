@@ -12,6 +12,9 @@ struct OnboardingPaywallView: View {
     @State private var pulse = false
     @State private var showPrivacyPolicy = false
     @State private var showTerms = false
+    @State private var isPurchasing = false
+    @State private var errorMessage: String? = nil
+    @State private var showError = false
 
     private var annualPrice: String {
         guard let offering = SubscriptionManager.shared.currentOffering,
@@ -31,7 +34,7 @@ struct OnboardingPaywallView: View {
 
     private var ctaTitle: String {
         selectedPlan == "Annuel"
-            ? "Essayer 3 jours gratuitement"
+            ? "3 jours gratuits, puis \(annualPrice)"
             : "S'abonner — \(monthlyPrice)"
     }
 
@@ -81,7 +84,7 @@ struct OnboardingPaywallView: View {
                                 .kerning(4)
                             
                             Text(selectedPlan == "Annuel"
-                                 ? "Commencez gratuitement\npendant 3 jours"
+                                 ? "3 jours gratuits,\npuis \(annualPrice)"
                                  : "Accès illimité\nà GoPilates")
                                 .font(.system(size: 32, weight: .bold))
                                 .foregroundColor(.white)
@@ -90,7 +93,7 @@ struct OnboardingPaywallView: View {
                                 .padding(.horizontal, 24)
                                 .animation(.easeInOut, value: selectedPlan)
 
-                            Text("Rejoignez plus de 100 000 femmes qui ont transformé leur corps et leur esprit.")
+                            Text("Abonnement GoPilates Premium. Rejoignez plus de 100 000 femmes qui ont transformé leur corps et leur esprit.")
                                 .font(.system(size: 15))
                                 .foregroundColor(.white.opacity(0.7))
                                 .multilineTextAlignment(.center)
@@ -150,15 +153,20 @@ struct OnboardingPaywallView: View {
                     Button(action: {
                         Task {
                             guard let offering = SubscriptionManager.shared.currentOffering else {
-                                print("No offerings available - Check RevenueCat configuration.")
+                                errorMessage = "Connexion requise : Impossible de charger les abonnements. Veuillez vérifier votre connexion internet."
+                                showError = true
                                 return
                             }
                             
                             let packageType: RevenueCat.PackageType = selectedPlan == "Annuel" ? .annual : .monthly
                             guard let package = offering.availablePackages.first(where: { $0.packageType == packageType }) else {
-                                print("Package \(packageType) not found in current offering.")
+                                errorMessage = "Forfait introuvable. Veuillez réessayer plus tard."
+                                showError = true
                                 return
                             }
+                            
+                            isPurchasing = true
+                            defer { isPurchasing = false }
                             
                             do {
                                 let success = try await SubscriptionManager.shared.purchase(package: package)
@@ -176,23 +184,32 @@ struct OnboardingPaywallView: View {
                                     DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) { onComplete() }
                                 }
                             } catch {
-                                print("Purchase failed: \(error.localizedDescription)")
+                                errorMessage = "L'achat a échoué: \(error.localizedDescription)"
+                                showError = true
                             }
                         }
                     }) {
-                        Text(ctaTitle)
-                            .font(.system(size: 18, weight: .bold))
-                            .foregroundColor(.deepCharcoal)
-                            .frame(maxWidth: .infinity)
-                            .frame(height: 60)
-                            .background(
-                                LinearGradient(colors: [Color.metallicGold, Color(red: 236/255, green: 205/255, blue: 139/255)], startPoint: .leading, endPoint: .trailing)
-                            )
-                            .cornerRadius(30)
-                            .shadow(color: Color.metallicGold.opacity(0.4), radius: 15, y: 8)
-                            .scaleEffect(pulse ? 1.02 : 1.0)
+                        ZStack {
+                            if isPurchasing {
+                                ProgressView()
+                                    .tint(.deepCharcoal)
+                            } else {
+                                Text(ctaTitle)
+                                    .font(.system(size: 18, weight: .bold))
+                            }
+                        }
+                        .foregroundColor(.deepCharcoal)
+                        .frame(maxWidth: .infinity)
+                        .frame(height: 60)
+                        .background(
+                            LinearGradient(colors: [Color.metallicGold, Color(red: 236/255, green: 205/255, blue: 139/255)], startPoint: .leading, endPoint: .trailing)
+                        )
+                        .cornerRadius(30)
+                        .shadow(color: Color.metallicGold.opacity(0.4), radius: 15, y: 8)
+                        .scaleEffect(pulse ? 1.02 : 1.0)
                     }
                     .buttonStyle(.plain)
+                    .disabled(isPurchasing)
                     .onAppear {
                         withAnimation(.easeInOut(duration: 1.2).repeatForever(autoreverses: true)) {
                             pulse = true
@@ -223,7 +240,7 @@ struct OnboardingPaywallView: View {
                     HStack(spacing: 16) {
                         Button("Confidentialité") { showPrivacyPolicy = true }
                         Text("·").foregroundColor(.white.opacity(0.3))
-                        Button("CGU") { showTerms = true }
+                        Button("Conditions d'utilisation (EULA)") { showTerms = true }
                     }
                     .font(.system(size: 11))
                     .foregroundColor(.white.opacity(0.4))
@@ -239,6 +256,11 @@ struct OnboardingPaywallView: View {
                     )
                     .ignoresSafeArea()
                 )
+            }
+            .alert("Erreur", isPresented: $showError) {
+                Button("OK", role: .cancel) { }
+            } message: {
+                Text(errorMessage ?? "Une erreur inconnue est survenue.")
             }
 
             // Payment Success Overlay

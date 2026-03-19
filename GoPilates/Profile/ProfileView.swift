@@ -329,7 +329,7 @@ struct ProfileView: View {
                     .padding(.horizontal, 16)
 
                 Button(action: { showTerms = true }) {
-                    settingsRow(icon: "doc.text.fill", title: "Conditions d'utilisation")
+                    settingsRow(icon: "doc.text.fill", title: "Conditions d'utilisation (EULA)")
                 }
                 .buttonStyle(.plain)
             }
