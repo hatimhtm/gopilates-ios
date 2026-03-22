@@ -345,7 +345,9 @@ struct ConfettiView: View {
     }
 
     private func generateParticles() {
-        let screenWidth = UIScreen.main.bounds.width
+        let screenWidth = (UIApplication.shared.connectedScenes
+            .compactMap { $0 as? UIWindowScene }
+            .first?.screen.bounds.width) ?? 400
         let colors = ["DDB263", "E8B6C3", "E6C7B2", "FDE2DB"]
         var newParticles: [ConfettiParticle] = []
 

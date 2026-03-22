@@ -152,6 +152,11 @@ struct OnboardingPaywallView: View {
                 VStack(spacing: 16) {
                     Button(action: {
                         Task {
+                            // Ensure offerings are loaded before attempting purchase
+                            if SubscriptionManager.shared.currentOffering == nil {
+                                await SubscriptionManager.shared.ensureOfferingsLoaded()
+                            }
+
                             guard let offering = SubscriptionManager.shared.currentOffering else {
                                 errorMessage = "Connexion requise : Impossible de charger les abonnements. Veuillez vérifier votre connexion internet."
                                 showError = true
@@ -166,31 +171,39 @@ struct OnboardingPaywallView: View {
                             }
                             
                             isPurchasing = true
-                            defer { isPurchasing = false }
                             
                             do {
                                 let success = try await SubscriptionManager.shared.purchase(package: package)
+                                isPurchasing = false
                                 if success {
                                     HapticManager.notification(.success)
                                     withAnimation { showingPaymentSuccess = true }
                                     DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) { onComplete() }
                                 }
-                            } catch let error as RevenueCat.ErrorCode where error == .productAlreadyPurchasedError {
-                                // Already purchased — restore to get the entitlement properly
-                                await SubscriptionManager.shared.restorePurchases()
-                                if SubscriptionManager.shared.isProEntitled {
-                                    HapticManager.notification(.success)
-                                    withAnimation { showingPaymentSuccess = true }
-                                    DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) { onComplete() }
-                                }
                             } catch {
-                                errorMessage = "L'achat a échoué: \(error.localizedDescription)"
-                                showError = true
+                                isPurchasing = false
+                                
+                                // Check error codes (domain string varies between RevenueCat SDK versions)
+                                let nsError = error as NSError
+                                if nsError.code == 1 /* purchaseCancelledError */ {
+                                    // User cancelled — do nothing, no error message needed
+                                } else if nsError.code == 7 /* productAlreadyPurchasedError */ {
+                                    // Already purchased — restore to get the entitlement properly
+                                    await SubscriptionManager.shared.restorePurchases()
+                                    if SubscriptionManager.shared.isProEntitled {
+                                        HapticManager.notification(.success)
+                                        withAnimation { showingPaymentSuccess = true }
+                                        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) { onComplete() }
+                                    }
+                                } else {
+                                    errorMessage = "L'achat a échoué. Veuillez vérifier votre connexion internet et réessayer."
+                                    showError = true
+                                }
                             }
                         }
                     }) {
                         ZStack {
-                            if isPurchasing {
+                            if isPurchasing || SubscriptionManager.shared.isLoadingOfferings {
                                 ProgressView()
                                     .tint(.deepCharcoal)
                             } else {
@@ -209,10 +222,14 @@ struct OnboardingPaywallView: View {
                         .scaleEffect(pulse ? 1.02 : 1.0)
                     }
                     .buttonStyle(.plain)
-                    .disabled(isPurchasing)
+                    .disabled(isPurchasing || SubscriptionManager.shared.isLoadingOfferings)
                     .onAppear {
                         withAnimation(.easeInOut(duration: 1.2).repeatForever(autoreverses: true)) {
                             pulse = true
+                        }
+                        // Retry loading offerings if they weren't loaded yet
+                        Task {
+                            await SubscriptionManager.shared.ensureOfferingsLoaded()
                         }
                     }
 

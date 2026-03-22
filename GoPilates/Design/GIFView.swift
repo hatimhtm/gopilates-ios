@@ -140,9 +140,10 @@ class PlayerUIView: UIView {
         }
 
         let item = AVPlayerItem(url: url)
-        self.queuePlayer = AVQueuePlayer(playerItem: item)
-        self.queuePlayer?.isMuted = true
-        self.looper = AVPlayerLooper(player: queuePlayer!, templateItem: item)
+        let player = AVQueuePlayer(playerItem: item)
+        player.isMuted = true
+        self.queuePlayer = player
+        self.looper = AVPlayerLooper(player: player, templateItem: item)
 
         if playerLayer == nil {
             let layer = AVPlayerLayer(player: queuePlayer)
