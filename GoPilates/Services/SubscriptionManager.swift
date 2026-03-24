@@ -15,6 +15,8 @@ class SubscriptionManager: NSObject {
     var customerInfo: CustomerInfo?
     var currentOffering: Offering?
 
+    private var fetchOfferingsTask: Task<Void, Never>?
+
     private override init() {
         super.init()
     }
@@ -22,7 +24,11 @@ class SubscriptionManager: NSObject {
     // MARK: - Configure SDK (call once at launch)
 
     func configure(withAPIKey apiKey: String) {
+        #if DEBUG
         Purchases.logLevel = .debug
+        #else
+        Purchases.logLevel = .info
+        #endif
         Purchases.configure(withAPIKey: apiKey)
         Purchases.shared.delegate = self
 
@@ -47,23 +53,37 @@ class SubscriptionManager: NSObject {
     // MARK: - Fetch Offerings (with retry support)
 
     func fetchOfferings() async {
-        guard !isLoadingOfferings else { return }
-        isLoadingOfferings = true
-        defer { isLoadingOfferings = false }
-
-        do {
-            let offerings = try await Purchases.shared.offerings()
-            if let current = offerings.current {
-                self.currentOffering = current
-            }
-        } catch {
-            print("❌ Failed to fetch offerings: \(error.localizedDescription)")
+        // If a fetch is already in progress, await it instead of silently returning
+        if let existingTask = fetchOfferingsTask {
+            await existingTask.value
+            return
         }
+
+        isLoadingOfferings = true
+        let task = Task {
+            do {
+                let offerings = try await Purchases.shared.offerings()
+                if let current = offerings.current {
+                    self.currentOffering = current
+                }
+            } catch {
+                print("❌ Failed to fetch offerings: \(error.localizedDescription)")
+            }
+            self.isLoadingOfferings = false
+            self.fetchOfferingsTask = nil
+        }
+        fetchOfferingsTask = task
+        await task.value
     }
 
     /// Re-fetch offerings if they haven't loaded yet (e.g., slow network on first attempt)
     func ensureOfferingsLoaded() async {
         if currentOffering == nil {
+            await fetchOfferings()
+        }
+        // Retry once if the first attempt failed (e.g., SDK wasn't fully ready)
+        if currentOffering == nil {
+            try? await Task.sleep(nanoseconds: 1_000_000_000)
             await fetchOfferings()
         }
     }

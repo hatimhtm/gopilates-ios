@@ -19,15 +19,18 @@ class HealthKitManager: ObservableObject {
             return
         }
 
-        let typesToWrite: Set<HKSampleType> = [
-            HKObjectType.workoutType(),
-            HKQuantityType.quantityType(forIdentifier: .activeEnergyBurned)!
-        ]
+        var typesToWrite: Set<HKSampleType> = [HKObjectType.workoutType()]
+        if let energyType = HKQuantityType.quantityType(forIdentifier: .activeEnergyBurned) {
+            typesToWrite.insert(energyType)
+        }
 
-        let typesToRead: Set<HKObjectType> = [
-            HKQuantityType.quantityType(forIdentifier: .heartRate)!,
-            HKQuantityType.quantityType(forIdentifier: .activeEnergyBurned)!
-        ]
+        var typesToRead: Set<HKObjectType> = []
+        if let heartRateType = HKQuantityType.quantityType(forIdentifier: .heartRate) {
+            typesToRead.insert(heartRateType)
+        }
+        if let energyType = HKQuantityType.quantityType(forIdentifier: .activeEnergyBurned) {
+            typesToRead.insert(energyType)
+        }
 
         store.requestAuthorization(toShare: typesToWrite, read: typesToRead) { [weak self] success, error in
             DispatchQueue.main.async {

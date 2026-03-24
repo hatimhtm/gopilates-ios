@@ -346,12 +346,16 @@ struct ProfileView: View {
             aboutSheet
         }
         .sheet(isPresented: $showPrivacyPolicy) {
-            SafariView(url: URL(string: "https://magnificent-crostata-3fa347.netlify.app/privacypolicy")!)
-                .ignoresSafeArea()
+            if let url = URL(string: "https://magnificent-crostata-3fa347.netlify.app/privacypolicy") {
+                SafariView(url: url)
+                    .ignoresSafeArea()
+            }
         }
         .sheet(isPresented: $showTerms) {
-            SafariView(url: URL(string: "https://magnificent-crostata-3fa347.netlify.app/termsandconditions")!)
-                .ignoresSafeArea()
+            if let url = URL(string: "https://magnificent-crostata-3fa347.netlify.app/termsandconditions") {
+                SafariView(url: url)
+                    .ignoresSafeArea()
+            }
         }
         .presentCustomerCenter(isPresented: $showCustomerCenter, onDismiss: {
             showCustomerCenter = false

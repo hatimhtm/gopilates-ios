@@ -19,7 +19,7 @@ struct OnboardingPaywallView: View {
     private var annualPrice: String {
         guard let offering = SubscriptionManager.shared.currentOffering,
               let package = offering.availablePackages.first(where: { $0.packageType == .annual }) else {
-            return "39,99€ / an (soit 3,33€/mois)"
+            return "Chargement…"
         }
         return "\(package.localizedPriceString) / an"
     }
@@ -27,9 +27,13 @@ struct OnboardingPaywallView: View {
     private var monthlyPrice: String {
         guard let offering = SubscriptionManager.shared.currentOffering,
               let package = offering.availablePackages.first(where: { $0.packageType == .monthly }) else {
-            return "9,99€ / mois"
+            return "Chargement…"
         }
         return "\(package.localizedPriceString) / mois"
+    }
+
+    private var offeringsLoaded: Bool {
+        SubscriptionManager.shared.currentOffering != nil
     }
 
     private var ctaTitle: String {
@@ -289,12 +293,16 @@ struct OnboardingPaywallView: View {
         }
         .animation(.spring(), value: showingPaymentSuccess)
         .sheet(isPresented: $showPrivacyPolicy) {
-            SafariView(url: URL(string: "https://magnificent-crostata-3fa347.netlify.app/privacypolicy")!)
-                .ignoresSafeArea()
+            if let url = URL(string: "https://magnificent-crostata-3fa347.netlify.app/privacypolicy") {
+                SafariView(url: url)
+                    .ignoresSafeArea()
+            }
         }
         .sheet(isPresented: $showTerms) {
-            SafariView(url: URL(string: "https://magnificent-crostata-3fa347.netlify.app/termsandconditions")!)
-                .ignoresSafeArea()
+            if let url = URL(string: "https://magnificent-crostata-3fa347.netlify.app/termsandconditions") {
+                SafariView(url: url)
+                    .ignoresSafeArea()
+            }
         }
     }
 

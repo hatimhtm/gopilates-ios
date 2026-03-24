@@ -58,6 +58,11 @@ struct OnboardingFacadingView: View {
         }
         .onAppear {
             startFacading()
+            // Pre-load RevenueCat offerings during the fake loading screen
+            // so they're ready when the paywall appears
+            Task {
+                await SubscriptionManager.shared.ensureOfferingsLoaded()
+            }
         }
     }
 
