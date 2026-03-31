@@ -16,7 +16,7 @@ struct GoPilatesApp: App {
         }
 
         // RevenueCat Configuration
-        SubscriptionManager.shared.configure(withAPIKey: "sk_dyGAndpwJolSnYvldWYocukvCnDds")
+        SubscriptionManager.shared.configure(withAPIKey: "appl_MtHgpReZSnQTViSzViyixhnfOpY")
     }
 
     var body: some Scene {

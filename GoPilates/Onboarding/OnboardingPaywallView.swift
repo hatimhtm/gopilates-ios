@@ -162,7 +162,7 @@ struct OnboardingPaywallView: View {
                             }
 
                             guard let offering = SubscriptionManager.shared.currentOffering else {
-                                errorMessage = "Connexion requise : Impossible de charger les abonnements. Veuillez vérifier votre connexion internet."
+                                errorMessage = "Les forfaits ne sont pas encore chargés. Veuillez patienter un instant ou vérifier votre connexion internet."
                                 showError = true
                                 return
                             }
