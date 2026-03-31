@@ -26,6 +26,12 @@ targets:
           - "**/*.md"
     scheme:
       storeKitConfiguration: Configuration.storekit
+    attributes:
+      SystemCapabilities:
+        com.apple.HealthKit:
+          enabled: 1
+        com.apple.InAppPurchase:
+          enabled: 1
     settings:
       base:
         PRODUCT_NAME: GoPilates
