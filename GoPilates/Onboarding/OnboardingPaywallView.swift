@@ -2,6 +2,7 @@ import SwiftUI
 import RevenueCat
 import SafariServices
 import StoreKit
+import UIKit
 
 struct OnboardingPaywallView: View {
     @Environment(OnboardingData.self) var data
@@ -210,14 +211,23 @@ struct OnboardingPaywallView: View {
         }
     }
 
-    /// Presents Apple's native code redemption sheet (works for subscription offer codes
-    /// and non-consumable promo codes alike). RevenueCat picks up the redemption via its
-    /// transaction observer, which flips `isProEntitled` and triggers `onChange` above.
-    /// A backup refresh after a delay covers the rare case the observer doesn't fire.
+    /// Presents Apple's native offer code redemption sheet (StoreKit 2). Since Apple's
+    /// March 26, 2026 unification, this single sheet handles offer codes for all IAP
+    /// types — auto-renewable subscriptions, non-consumables, consumables, and
+    /// non-renewing subscriptions. RevenueCat's transaction observer picks up the
+    /// redemption automatically and flips `isProEntitled`; the backup refresh after the
+    /// sheet dismisses covers the rare case the observer doesn't fire.
     private func handlePromoCode() {
-        SKPaymentQueue.default().presentCodeRedemptionSheet()
-        Task {
-            try? await Task.sleep(nanoseconds: 5_000_000_000)
+        Task { @MainActor in
+            let scenes = UIApplication.shared.connectedScenes.compactMap { $0 as? UIWindowScene }
+            guard let scene = scenes.first(where: { $0.activationState == .foregroundActive }) ?? scenes.first else {
+                return
+            }
+            do {
+                try await AppStore.presentOfferCodeRedeemSheet(in: scene)
+            } catch {
+                // Sheet dismissed or unavailable — Apple handles its own UX
+            }
             await SubscriptionManager.shared.refreshCustomerInfo()
         }
     }
