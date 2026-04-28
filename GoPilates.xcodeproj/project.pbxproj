@@ -720,7 +720,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = GoPilates/GoPilates.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 100;
 				DEVELOPMENT_TEAM = ULHJAB7ZT3;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = GoPilates/Resources/Info.plist;
@@ -731,7 +731,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.gopilates.app;
 				PRODUCT_NAME = GoPilates;
 				SWIFT_VERSION = 5.9;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -751,7 +751,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = GoPilates/GoPilates.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 100;
 				DEVELOPMENT_TEAM = ULHJAB7ZT3;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = GoPilates/Resources/Info.plist;
@@ -761,7 +761,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.gopilates.app;
 				PRODUCT_NAME = GoPilates;
 				SWIFT_VERSION = 5.9;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
