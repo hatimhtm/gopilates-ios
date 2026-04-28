@@ -369,6 +369,48 @@ import UserNotifications
 struct NotificationManager {
     static let shared = NotificationManager()
 
+    private static let trialReminderID = "gopilates.trial_end_reminder"
+
+    /// Schedules a single local notification for ~1 day before the 3-day free trial ends
+    /// (today + 2 days at 10:00 local time). Requests permission on demand.
+    func scheduleTrialEndReminder() async {
+        let center = UNUserNotificationCenter.current()
+        let settings = await center.notificationSettings()
+
+        let granted: Bool
+        switch settings.authorizationStatus {
+        case .authorized, .provisional, .ephemeral:
+            granted = true
+        case .notDetermined:
+            granted = (try? await center.requestAuthorization(options: [.alert, .sound, .badge])) ?? false
+        case .denied:
+            granted = false
+        @unknown default:
+            granted = false
+        }
+        guard granted else { return }
+
+        guard let fireDay = Calendar.current.date(byAdding: .day, value: 2, to: Date()) else { return }
+        var components = Calendar.current.dateComponents([.year, .month, .day], from: fireDay)
+        components.hour = 10
+        components.minute = 0
+
+        let content = UNMutableNotificationContent()
+        content.title = "Votre essai gratuit prend fin demain"
+        content.body = "Profitez de votre dernière journée d'accès Premium GoPilates. Annulez à tout moment dans Réglages."
+        content.sound = .default
+
+        let trigger = UNCalendarNotificationTrigger(dateMatching: components, repeats: false)
+        let request = UNNotificationRequest(identifier: Self.trialReminderID, content: content, trigger: trigger)
+
+        center.removePendingNotificationRequests(withIdentifiers: [Self.trialReminderID])
+        try? await center.add(request)
+    }
+
+    func cancelTrialEndReminder() {
+        UNUserNotificationCenter.current().removePendingNotificationRequests(withIdentifiers: [Self.trialReminderID])
+    }
+
     func toggleNotifications(enabled: Bool, completion: @escaping (Bool) -> Void) {
         let center = UNUserNotificationCenter.current()
         if enabled {
