@@ -21,16 +21,18 @@ struct GoPilatesApp: App {
 
     var body: some Scene {
         WindowGroup {
-            if userProfile.hasCompletedOnboarding {
-                DashboardView()
-                    .environmentObject(userProfile)
-            } else {
-                OnboardingFlow()
-                    .environmentObject(userProfile)
+            Group {
+                if userProfile.hasCompletedOnboarding {
+                    DashboardView()
+                        .environmentObject(userProfile)
+                } else {
+                    OnboardingFlow()
+                        .environmentObject(userProfile)
+                }
             }
-        }
-        .task {
-            await TenjinService.shared.initialize()
+            .task {
+                await TenjinService.shared.initialize()
+            }
         }
     }
 }

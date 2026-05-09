@@ -79,7 +79,7 @@ final class TenjinService {
         // Utilisation de l'événement "start_trial" comme demandé
         TenjinSDK.sendEvent(withName: "start_trial")
         if #available(iOS 14.0, *) {
-            TenjinSDK.updatePostbackConversionValue(20) // 20 = subscription
+            TenjinSDK.updatePostbackConversionValue(Int32(20)) // 20 = subscription
         }
         print("TENJIN: Free trial started event tracked (start_trial)")
     }
@@ -94,18 +94,18 @@ final class TenjinService {
         if #available(iOS 16.1, *), let coarseValue = coarseValue {
             if let lockWindow = lockWindow {
                 TenjinSDK.updatePostbackConversionValue(
-                    conversionValue,
+                    Int32(conversionValue),
                     coarseValue: coarseValue,
                     lockWindow: lockWindow
                 )
             } else {
                 TenjinSDK.updatePostbackConversionValue(
-                    conversionValue,
+                    Int32(conversionValue),
                     coarseValue: coarseValue
                 )
             }
         } else if #available(iOS 14.0, *) {
-            TenjinSDK.updatePostbackConversionValue(conversionValue)
+            TenjinSDK.updatePostbackConversionValue(Int32(conversionValue))
         }
         print("TENJIN: Conversion value updated: \(conversionValue)")
     }
