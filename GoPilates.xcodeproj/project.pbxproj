@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 77;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -54,6 +54,8 @@
 		52152E2B3B0FBCD01D92B0AD /* exercise_gentle_bed_bridge.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 813C55241D4C333F98569808 /* exercise_gentle_bed_bridge.mp4 */; };
 		52E6577BF0B60E6456B49469 /* OnboardingTargetWeightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107F58A8E8F8C155C004FEAA /* OnboardingTargetWeightView.swift */; };
 		5332333FA677BF7D8AEFC7A7 /* OnboardingLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20DE6BD5D775BEBF7A8EF5B /* OnboardingLocationView.swift */; };
+		5408258CA40A581FB4F07385 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = E0A8801A7D601A8D5D63D053 /* Lottie */; };
+		598E12D51F952568753B636F /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D453E1013F992754563C913 /* HealthKit.framework */; };
 		5B380D067DA2E8ADF24B891B /* OnboardingFaceTransformView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4ADDA0A29EFB08CAAC3EDA3 /* OnboardingFaceTransformView.swift */; };
 		60EA0C25A306578517BFC63A /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CCF5CB3E3270CF8A5260ED /* DashboardView.swift */; };
 		61F09793A59634FF71F7DF06 /* extract_pb.py in Resources */ = {isa = PBXBuildFile; fileRef = 1BCF8A6B3DCA6C136F1596FB /* extract_pb.py */; };
@@ -89,15 +91,11 @@
 		ABF7571AAD4793A70FAF2F8D /* exercise_bicycle.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B0B129558EA9A4C6275B69C6 /* exercise_bicycle.mp4 */; };
 		AE2756BC5D4931631D45D83C /* exercise_thoracic_rotation.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 6DE86EDB9FB85EBFDEBEC1A0 /* exercise_thoracic_rotation.mp4 */; };
 		AE910E18EA4AFF47AB9E8792 /* exercise_supine_leg_lift.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 117FF94767E419C3DF5B263C /* exercise_supine_leg_lift.mp4 */; };
-		AF2402E22F5F96A300C13D44 /* ReceiptParser in Frameworks */ = {isa = PBXBuildFile; productRef = AF2402E12F5F96A300C13D44 /* ReceiptParser */; };
-		AF2402E42F5F96A300C13D44 /* RevenueCat in Frameworks */ = {isa = PBXBuildFile; productRef = AF2402E32F5F96A300C13D44 /* RevenueCat */; };
-		AF2402E62F5F96A300C13D44 /* RevenueCatUI in Frameworks */ = {isa = PBXBuildFile; productRef = AF2402E52F5F96A300C13D44 /* RevenueCatUI */; };
-		AF6DB7E72F5F020C00287C55 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D453E1013F992754563C913 /* HealthKit.framework */; };
-		AF6DB7EC2F5F794A00287C55 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = AF6DB7EB2F5F794A00287C55 /* Lottie */; };
 		B4C7A1F5D821D26C04CCA93F /* exercise_bodyweight_squats.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 001F9E4BBF9DCFACAA4F48C0 /* exercise_bodyweight_squats.mp4 */; };
 		B5BC6BE2BC98C3B38D6C3D80 /* OnboardingFinalProjectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CF02A09D9594C585F4F94C /* OnboardingFinalProjectionView.swift */; };
 		B752B27966C43F661D08A664 /* OnboardingHeightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F95509DD00E663311C2FDB3 /* OnboardingHeightView.swift */; };
 		B7CFB50ED7052EC67622CDCE /* exercise_fullbody.json in Resources */ = {isa = PBXBuildFile; fileRef = 40BF966A62A3FEF805530F52 /* exercise_fullbody.json */; };
+		B7E9AD4E4233A75A13F8FEC3 /* TenjinSDK in Frameworks */ = {isa = PBXBuildFile; productRef = A5B5B8CA3452D96BA35686D8 /* TenjinSDK */; };
 		BC2D94DFE02EA99C3C1D17D1 /* OnboardingFlexibilityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1DF8AFABDA91D1788E1920 /* OnboardingFlexibilityView.swift */; };
 		BC9B39CB624B99F2B0C863F0 /* OnboardingPaywallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88B7BAE2E2C011B3FA7D76B /* OnboardingPaywallView.swift */; };
 		BD1FB1D24627C5B85FC01C3F /* GIFView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00D62369024F14C4D7598E4 /* GIFView.swift */; };
@@ -106,6 +104,8 @@
 		C10BB5C5BFA2BDA4DB7121BD /* exercise_wall_pulse_squats.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 1FA9ACFA8B6EE06AE6975838 /* exercise_wall_pulse_squats.mp4 */; };
 		C2551013BE44B7FE321D248D /* exercise_core.json in Resources */ = {isa = PBXBuildFile; fileRef = 3AABDB404095E0FF8C09844D /* exercise_core.json */; };
 		C84C1FEAB7AF273BC466F3B3 /* OnboardingSocialProof100kView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BC54E2F0784D410F8AA63B /* OnboardingSocialProof100kView.swift */; };
+		CF0353757AE6A69C37D48809 /* RevenueCat in Frameworks */ = {isa = PBXBuildFile; productRef = 2D14AD12C4F7BA56247E64EB /* RevenueCat */; };
+		D04DA40E45E395FEAEE80BCA /* TenjinService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FE972A43730E1EC0EA7796 /* TenjinService.swift */; };
 		D0EF0A1BE982262490457E9F /* exercise_pilates_push_up.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0625B6A6B823EAD7124A3E03 /* exercise_pilates_push_up.mp4 */; };
 		D29E4B65D62028D3565C252A /* OnboardingPotentialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF30AA796EA5FDA95C0B3446 /* OnboardingPotentialView.swift */; };
 		D2E1C5A0AAA10C4AA1330157 /* ExerciseAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C6F4254568D41408094C54 /* ExerciseAnimations.swift */; };
@@ -113,6 +113,7 @@
 		D6B4F630DE4A43EFF16167E6 /* OnboardingRewardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9565F075465C88F15F157B15 /* OnboardingRewardView.swift */; };
 		DF1998B502F59EB30A3C7346 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9DADD9A4FF36ABD28AFA2C /* LottieView.swift */; };
 		DFE1AA6681FA8CFF27CCC246 /* exercise_pigeon_stretch.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B08541191839F0E9B465C964 /* exercise_pigeon_stretch.mp4 */; };
+		E152B2F8C65A307E638932B7 /* RevenueCatUI in Frameworks */ = {isa = PBXBuildFile; productRef = 7BAD65C98D69049FAC8A8BB7 /* RevenueCatUI */; };
 		E4DD5289BBD2D53FF609ECAC /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D976D2F79803B2CC02EB8B /* UserProfile.swift */; };
 		E63E963D8F26C595FB2842F7 /* OnboardingDailyLifeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEC68A4496973D421D42B6E /* OnboardingDailyLifeView.swift */; };
 		E6E6F47A1BF643E851DDB23E /* exercise_the_hundred.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F76DD18DAB0AF8DC9AD1E182 /* exercise_the_hundred.mp4 */; };
@@ -127,25 +128,25 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		001F9E4BBF9DCFACAA4F48C0 /* exercise_bodyweight_squats.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = exercise_bodyweight_squats.mp4; sourceTree = "<group>"; };
+		001F9E4BBF9DCFACAA4F48C0 /* exercise_bodyweight_squats.mp4 */ = {isa = PBXFileReference; path = exercise_bodyweight_squats.mp4; sourceTree = "<group>"; };
 		029166E9C3723E0555116618 /* WorkoutTimerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutTimerService.swift; sourceTree = "<group>"; };
 		03BB82F2CBA3EDB557801644 /* OnboardingMotivationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingMotivationView.swift; sourceTree = "<group>"; };
-		0625B6A6B823EAD7124A3E03 /* exercise_pilates_push_up.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = exercise_pilates_push_up.mp4; sourceTree = "<group>"; };
+		0625B6A6B823EAD7124A3E03 /* exercise_pilates_push_up.mp4 */ = {isa = PBXFileReference; path = exercise_pilates_push_up.mp4; sourceTree = "<group>"; };
 		0716049483BE7FD24DC6D61B /* HapticManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticManager.swift; sourceTree = "<group>"; };
 		0A00B9D8A62AAA545C3019C0 /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
-		1071B2B77C619A8CDE169625 /* exercise_plank_leg_lift.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = exercise_plank_leg_lift.mp4; sourceTree = "<group>"; };
+		1071B2B77C619A8CDE169625 /* exercise_plank_leg_lift.mp4 */ = {isa = PBXFileReference; path = exercise_plank_leg_lift.mp4; sourceTree = "<group>"; };
 		107F58A8E8F8C155C004FEAA /* OnboardingTargetWeightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingTargetWeightView.swift; sourceTree = "<group>"; };
-		117FF94767E419C3DF5B263C /* exercise_supine_leg_lift.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = exercise_supine_leg_lift.mp4; sourceTree = "<group>"; };
+		117FF94767E419C3DF5B263C /* exercise_supine_leg_lift.mp4 */ = {isa = PBXFileReference; path = exercise_supine_leg_lift.mp4; sourceTree = "<group>"; };
 		1323F313035D872B4E6E4965 /* HealthKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitManager.swift; sourceTree = "<group>"; };
 		16E8A4FAB760A61D5BBAB2C0 /* download_mp4s.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = download_mp4s.py; sourceTree = "<group>"; };
 		1794201B211EA60D002E28B4 /* OnboardingBodyTypeTargetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingBodyTypeTargetView.swift; sourceTree = "<group>"; };
-		19C79B65C4C95DA3ED4F8F08 /* exercise_seated_spine_stretch.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = exercise_seated_spine_stretch.mp4; sourceTree = "<group>"; };
+		19C79B65C4C95DA3ED4F8F08 /* exercise_seated_spine_stretch.mp4 */ = {isa = PBXFileReference; path = exercise_seated_spine_stretch.mp4; sourceTree = "<group>"; };
 		1BCF8A6B3DCA6C136F1596FB /* extract_pb.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = extract_pb.py; sourceTree = "<group>"; };
 		1E81FDB719E706CBB3702BE2 /* download_exercise_media.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = download_exercise_media.py; sourceTree = "<group>"; };
 		1F1EAE268A64953D1D8B4634 /* raw_generate.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = raw_generate.txt; sourceTree = "<group>"; };
-		1FA9ACFA8B6EE06AE6975838 /* exercise_wall_pulse_squats.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = exercise_wall_pulse_squats.mp4; sourceTree = "<group>"; };
+		1FA9ACFA8B6EE06AE6975838 /* exercise_wall_pulse_squats.mp4 */ = {isa = PBXFileReference; path = exercise_wall_pulse_squats.mp4; sourceTree = "<group>"; };
 		21D23ED11B221AF48558EB61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		222D8A78521FE23FA052979B /* exercise_teaser.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = exercise_teaser.mp4; sourceTree = "<group>"; };
+		222D8A78521FE23FA052979B /* exercise_teaser.mp4 */ = {isa = PBXFileReference; path = exercise_teaser.mp4; sourceTree = "<group>"; };
 		285ADD4423B881E45E9CD109 /* OnboardingGoalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingGoalView.swift; sourceTree = "<group>"; };
 		2875858091218F2F5C7DE404 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		2AF6B0AF8D65176A0C0493BC /* crop_watermarks.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = crop_watermarks.py; sourceTree = "<group>"; };
@@ -153,49 +154,52 @@
 		349A5D433564D6BD97F0A8D8 /* ChallengeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeView.swift; sourceTree = "<group>"; };
 		3AABDB404095E0FF8C09844D /* exercise_core.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = exercise_core.json; sourceTree = "<group>"; };
 		3D453E1013F992754563C913 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
-		3E51F7C48F94EEA7389B37AA /* exercise_cat_cow_stretch.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = exercise_cat_cow_stretch.mp4; sourceTree = "<group>"; };
+		3E51F7C48F94EEA7389B37AA /* exercise_cat_cow_stretch.mp4 */ = {isa = PBXFileReference; path = exercise_cat_cow_stretch.mp4; sourceTree = "<group>"; };
 		40BF966A62A3FEF805530F52 /* exercise_fullbody.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = exercise_fullbody.json; sourceTree = "<group>"; };
 		44E21CFDC785536C1A650FC4 /* ExerciseDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseDetailView.swift; sourceTree = "<group>"; };
 		4515CCC0FB33E8ADA14257E7 /* OnboardingFuturePacingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingFuturePacingView.swift; sourceTree = "<group>"; };
 		4E49B340F39DCCE730B35F4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		4EE2448D8AC8120870BB215B /* GoPilates.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoPilates.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4EB0601C5FDB2968A786CCCA /* .gitkeep */ = {isa = PBXFileReference; path = .gitkeep; sourceTree = "<group>"; };
+		4EE2448D8AC8120870BB215B /* GoPilates.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = GoPilates.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		520CA469394C9AB14EB31456 /* OnboardingGreetingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingGreetingView.swift; sourceTree = "<group>"; };
 		5564F93FE5C3976260FAAE5E /* OnboardingData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingData.swift; sourceTree = "<group>"; };
-		5825AE58413BF966B675A531 /* exercise_kneeling_plank.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = exercise_kneeling_plank.mp4; sourceTree = "<group>"; };
+		5825AE58413BF966B675A531 /* exercise_kneeling_plank.mp4 */ = {isa = PBXFileReference; path = exercise_kneeling_plank.mp4; sourceTree = "<group>"; };
 		587046CB1A8582758C7821B9 /* raw_engine.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = raw_engine.txt; sourceTree = "<group>"; };
-		5C3955CB44B913CC627D810E /* exercise_glute_bridge.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = exercise_glute_bridge.mp4; sourceTree = "<group>"; };
+		5C3955CB44B913CC627D810E /* exercise_glute_bridge.mp4 */ = {isa = PBXFileReference; path = exercise_glute_bridge.mp4; sourceTree = "<group>"; };
 		5C40C4C29DBEC0D6995DC872 /* OnboardingAffirmation1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingAffirmation1View.swift; sourceTree = "<group>"; };
 		5C72BDAABDC9CB288B3673A4 /* LazyWorkoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyWorkoutView.swift; sourceTree = "<group>"; };
 		5CE7C2EC101B4CD9621FA9E8 /* GoPilatesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoPilatesApp.swift; sourceTree = "<group>"; };
 		5F4AD612512B9F910FEA526E /* OnboardingBodyZoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingBodyZoneView.swift; sourceTree = "<group>"; };
 		5F95509DD00E663311C2FDB3 /* OnboardingHeightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingHeightView.swift; sourceTree = "<group>"; };
-		622C53E46EBB09440FBDB8C8 /* exercise_dead_bug.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = exercise_dead_bug.mp4; sourceTree = "<group>"; };
+		622C53E46EBB09440FBDB8C8 /* exercise_dead_bug.mp4 */ = {isa = PBXFileReference; path = exercise_dead_bug.mp4; sourceTree = "<group>"; };
+		6295D74B0B7B5ABFF13BAF87 /* GoPilates-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GoPilates-Bridging-Header.h"; sourceTree = "<group>"; };
 		6912D7369F2BFB72CF9FCEC5 /* GoPilates.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GoPilates.entitlements; sourceTree = "<group>"; };
-		6DE86EDB9FB85EBFDEBEC1A0 /* exercise_thoracic_rotation.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = exercise_thoracic_rotation.mp4; sourceTree = "<group>"; };
+		6DE86EDB9FB85EBFDEBEC1A0 /* exercise_thoracic_rotation.mp4 */ = {isa = PBXFileReference; path = exercise_thoracic_rotation.mp4; sourceTree = "<group>"; };
 		721DD89E1BFF2355AEB4299C /* DesignSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSystem.swift; sourceTree = "<group>"; };
-		72792DDB525A60DCAF37DED7 /* exercise_swan_dive_prep.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = exercise_swan_dive_prep.mp4; sourceTree = "<group>"; };
+		72792DDB525A60DCAF37DED7 /* exercise_swan_dive_prep.mp4 */ = {isa = PBXFileReference; path = exercise_swan_dive_prep.mp4; sourceTree = "<group>"; };
 		738C2BB26FC301CD70A90CD6 /* generate_math_gifs.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = generate_math_gifs.py; sourceTree = "<group>"; };
 		73BC54E2F0784D410F8AA63B /* OnboardingSocialProof100kView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSocialProof100kView.swift; sourceTree = "<group>"; };
 		787F560ED8AAB7A01E5B223A /* OnboardingFamiliarityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingFamiliarityView.swift; sourceTree = "<group>"; };
-		7ADF4D15D130E347CDCCD0A6 /* exercise_wrist_stretch.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = exercise_wrist_stretch.mp4; sourceTree = "<group>"; };
+		7ADF4D15D130E347CDCCD0A6 /* exercise_wrist_stretch.mp4 */ = {isa = PBXFileReference; path = exercise_wrist_stretch.mp4; sourceTree = "<group>"; };
 		7D9DADD9A4FF36ABD28AFA2C /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
 		7FCA0D3AADADFA815A5943A6 /* CollectionDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionDetailView.swift; sourceTree = "<group>"; };
 		80B9F4839A0A3DCA4C8751AE /* hd_unbranded_scraper.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = hd_unbranded_scraper.py; sourceTree = "<group>"; };
-		813C55241D4C333F98569808 /* exercise_gentle_bed_bridge.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = exercise_gentle_bed_bridge.mp4; sourceTree = "<group>"; };
+		813C55241D4C333F98569808 /* exercise_gentle_bed_bridge.mp4 */ = {isa = PBXFileReference; path = exercise_gentle_bed_bridge.mp4; sourceTree = "<group>"; };
 		8314E9D9F22FBBCED2539918 /* OnboardingAgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingAgeView.swift; sourceTree = "<group>"; };
 		83839D4159D0DA97A4891DFD /* create_exercise_gifs.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = create_exercise_gifs.py; sourceTree = "<group>"; };
 		860552178F20AC57B3C2CF2E /* celebration.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = celebration.json; sourceTree = "<group>"; };
-		8657BEC9E2BCAFA0FBAC802F /* exercise_single_toe_taps.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = exercise_single_toe_taps.mp4; sourceTree = "<group>"; };
-		88BC0C15261B4F5D2333DDBA /* exercise_supine_spinal_twist.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = exercise_supine_spinal_twist.mp4; sourceTree = "<group>"; };
+		8657BEC9E2BCAFA0FBAC802F /* exercise_single_toe_taps.mp4 */ = {isa = PBXFileReference; path = exercise_single_toe_taps.mp4; sourceTree = "<group>"; };
+		88BC0C15261B4F5D2333DDBA /* exercise_supine_spinal_twist.mp4 */ = {isa = PBXFileReference; path = exercise_supine_spinal_twist.mp4; sourceTree = "<group>"; };
 		8E699170C04FECEC125DB8EB /* OnboardingFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingFlow.swift; sourceTree = "<group>"; };
 		8F1DF8AFABDA91D1788E1920 /* OnboardingFlexibilityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingFlexibilityView.swift; sourceTree = "<group>"; };
 		94C6F4254568D41408094C54 /* ExerciseAnimations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseAnimations.swift; sourceTree = "<group>"; };
 		9565F075465C88F15F157B15 /* OnboardingRewardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingRewardView.swift; sourceTree = "<group>"; };
 		96A2636B7206F20A9B148302 /* AudioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
 		970EB6E70DF1C8EC05DBE1DE /* exercise_glutes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = exercise_glutes.json; sourceTree = "<group>"; };
+		97FE972A43730E1EC0EA7796 /* TenjinService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TenjinService.swift; sourceTree = "<group>"; };
 		9B02A9C782C3F87261558C10 /* OnboardingActivityLevelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingActivityLevelView.swift; sourceTree = "<group>"; };
 		9D7A01DF412C6240888F79C2 /* OnboardingFitnessLevelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingFitnessLevelView.swift; sourceTree = "<group>"; };
-		9F54F0E129550974766A0084 /* exercise_plank.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = exercise_plank.mp4; sourceTree = "<group>"; };
+		9F54F0E129550974766A0084 /* exercise_plank.mp4 */ = {isa = PBXFileReference; path = exercise_plank.mp4; sourceTree = "<group>"; };
 		A1D976D2F79803B2CC02EB8B /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
 		A20DE6BD5D775BEBF7A8EF5B /* OnboardingLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingLocationView.swift; sourceTree = "<group>"; };
 		A2E6DAB29885DD7F8D12292C /* OnboardingEmotionalGoalsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingEmotionalGoalsView.swift; sourceTree = "<group>"; };
@@ -204,13 +208,13 @@
 		A4DDFA6E117B9A13EC73AA2D /* OnboardingCurrentWeightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCurrentWeightView.swift; sourceTree = "<group>"; };
 		ABD330624A269C5F4883C079 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		AC28119152962301280388E7 /* playwright_scraper.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = playwright_scraper.py; sourceTree = "<group>"; };
-		B06CE412EFB0CBA64D2D1014 /* exercise_roll_up.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = exercise_roll_up.mp4; sourceTree = "<group>"; };
-		B08541191839F0E9B465C964 /* exercise_pigeon_stretch.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = exercise_pigeon_stretch.mp4; sourceTree = "<group>"; };
-		B0B129558EA9A4C6275B69C6 /* exercise_bicycle.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = exercise_bicycle.mp4; sourceTree = "<group>"; };
+		B06CE412EFB0CBA64D2D1014 /* exercise_roll_up.mp4 */ = {isa = PBXFileReference; path = exercise_roll_up.mp4; sourceTree = "<group>"; };
+		B08541191839F0E9B465C964 /* exercise_pigeon_stretch.mp4 */ = {isa = PBXFileReference; path = exercise_pigeon_stretch.mp4; sourceTree = "<group>"; };
+		B0B129558EA9A4C6275B69C6 /* exercise_bicycle.mp4 */ = {isa = PBXFileReference; path = exercise_bicycle.mp4; sourceTree = "<group>"; };
 		B88B7BAE2E2C011B3FA7D76B /* OnboardingPaywallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPaywallView.swift; sourceTree = "<group>"; };
-		B93639DB2F84BA1CDE618BD3 /* exercise_spine_twist.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = exercise_spine_twist.mp4; sourceTree = "<group>"; };
-		BA6043D5D72C595F9C047D45 /* exercise_wall_roll_down.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = exercise_wall_roll_down.mp4; sourceTree = "<group>"; };
-		BD7D11A55377EB8F7D49A623 /* exercise_scissors.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = exercise_scissors.mp4; sourceTree = "<group>"; };
+		B93639DB2F84BA1CDE618BD3 /* exercise_spine_twist.mp4 */ = {isa = PBXFileReference; path = exercise_spine_twist.mp4; sourceTree = "<group>"; };
+		BA6043D5D72C595F9C047D45 /* exercise_wall_roll_down.mp4 */ = {isa = PBXFileReference; path = exercise_wall_roll_down.mp4; sourceTree = "<group>"; };
+		BD7D11A55377EB8F7D49A623 /* exercise_scissors.mp4 */ = {isa = PBXFileReference; path = exercise_scissors.mp4; sourceTree = "<group>"; };
 		C23B94221F178A2D01FC9949 /* WorkoutPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutPlayerView.swift; sourceTree = "<group>"; };
 		C43112AAA797BB5EBC7F2956 /* OnboardingNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingNameView.swift; sourceTree = "<group>"; };
 		C5EDE23046734537BBCC97A0 /* StreakCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreakCalendarView.swift; sourceTree = "<group>"; };
@@ -225,7 +229,7 @@
 		D1A900365F9046AFF815D14B /* OnboardingFacadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingFacadingView.swift; sourceTree = "<group>"; };
 		D4540A8B1ADECB93487DE71F /* download_gifs.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = download_gifs.py; sourceTree = "<group>"; };
 		D5CF02A09D9594C585F4F94C /* OnboardingFinalProjectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingFinalProjectionView.swift; sourceTree = "<group>"; };
-		DA545F63F8ABE6AB4307F938 /* exercise_double_toe_taps.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = exercise_double_toe_taps.mp4; sourceTree = "<group>"; };
+		DA545F63F8ABE6AB4307F938 /* exercise_double_toe_taps.mp4 */ = {isa = PBXFileReference; path = exercise_double_toe_taps.mp4; sourceTree = "<group>"; };
 		DE4EF7F016AE912463AE7CB7 /* onboarding_loading.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = onboarding_loading.json; sourceTree = "<group>"; };
 		E170925433CEC587A16C1D7F /* OnboardingWeightProjectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingWeightProjectionView.swift; sourceTree = "<group>"; };
 		E2F93D7337829C79963F62B5 /* OnboardingCardioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCardioView.swift; sourceTree = "<group>"; };
@@ -238,11 +242,11 @@
 		EDF0A35B7F5E5FE62D6EA78E /* OnboardingValidationViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingValidationViews.swift; sourceTree = "<group>"; };
 		EF30AA796EA5FDA95C0B3446 /* OnboardingPotentialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPotentialView.swift; sourceTree = "<group>"; };
 		EF4AC695420EF4852D3D92FB /* SharedOnboardingComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedOnboardingComponents.swift; sourceTree = "<group>"; };
-		F4990F8655F57246A69ACE27 /* exercise_bed_leg_raise.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = exercise_bed_leg_raise.mp4; sourceTree = "<group>"; };
-		F76DD18DAB0AF8DC9AD1E182 /* exercise_the_hundred.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = exercise_the_hundred.mp4; sourceTree = "<group>"; };
+		F4990F8655F57246A69ACE27 /* exercise_bed_leg_raise.mp4 */ = {isa = PBXFileReference; path = exercise_bed_leg_raise.mp4; sourceTree = "<group>"; };
+		F76DD18DAB0AF8DC9AD1E182 /* exercise_the_hundred.mp4 */ = {isa = PBXFileReference; path = exercise_the_hundred.mp4; sourceTree = "<group>"; };
 		F8E94A795115257DECEACFFD /* pb_strings.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = pb_strings.txt; sourceTree = "<group>"; };
-		FB050754242523663E7BE459 /* exercise_single_leg_stretch.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = exercise_single_leg_stretch.mp4; sourceTree = "<group>"; };
-		FB31FD32846C3F33AB5D2D92 /* exercise_double_leg_stretch.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = exercise_double_leg_stretch.mp4; sourceTree = "<group>"; };
+		FB050754242523663E7BE459 /* exercise_single_leg_stretch.mp4 */ = {isa = PBXFileReference; path = exercise_single_leg_stretch.mp4; sourceTree = "<group>"; };
+		FB31FD32846C3F33AB5D2D92 /* exercise_double_leg_stretch.mp4 */ = {isa = PBXFileReference; path = exercise_double_leg_stretch.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -250,11 +254,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF6DB7E72F5F020C00287C55 /* HealthKit.framework in Frameworks */,
-				AF6DB7EC2F5F794A00287C55 /* Lottie in Frameworks */,
-				AF2402E62F5F96A300C13D44 /* RevenueCatUI in Frameworks */,
-				AF2402E42F5F96A300C13D44 /* RevenueCat in Frameworks */,
-				AF2402E22F5F96A300C13D44 /* ReceiptParser in Frameworks */,
+				598E12D51F952568753B636F /* HealthKit.framework in Frameworks */,
+				5408258CA40A581FB4F07385 /* Lottie in Frameworks */,
+				CF0353757AE6A69C37D48809 /* RevenueCat in Frameworks */,
+				E152B2F8C65A307E638932B7 /* RevenueCatUI in Frameworks */,
+				B7E9AD4E4233A75A13F8FEC3 /* TenjinSDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,13 +284,6 @@
 			path = Dashboard;
 			sourceTree = "<group>";
 		};
-		09D6A37F0466CE9DE9CB9EDB /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
 		29A5F9FE7E3FCFAD213D2D59 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -300,6 +297,7 @@
 		39ACE7DF36A96CC459667E67 /* ExerciseVideos */ = {
 			isa = PBXGroup;
 			children = (
+				4EB0601C5FDB2968A786CCCA /* .gitkeep */,
 				F4990F8655F57246A69ACE27 /* exercise_bed_leg_raise.mp4 */,
 				B0B129558EA9A4C6275B69C6 /* exercise_bicycle.mp4 */,
 				001F9E4BBF9DCFACAA4F48C0 /* exercise_bodyweight_squats.mp4 */,
@@ -384,6 +382,7 @@
 				1323F313035D872B4E6E4965 /* HealthKitManager.swift */,
 				C70E44675680597EE2DABC03 /* LottieAnimationService.swift */,
 				ED398276524DF6CD1872D471 /* SubscriptionManager.swift */,
+				97FE972A43730E1EC0EA7796 /* TenjinService.swift */,
 				029166E9C3723E0555116618 /* WorkoutTimerService.swift */,
 			);
 			path = Services;
@@ -469,7 +468,6 @@
 				A4AC0244164A7940DCF083FB /* slice_pb.py */,
 				AD2D6D9A8C445AF2EA27FF28 /* Animations */,
 				39ACE7DF36A96CC459667E67 /* ExerciseVideos */,
-				09D6A37F0466CE9DE9CB9EDB /* Resources */,
 				0329201CB08832377C29CE9D /* SVGAnimations */,
 			);
 			path = Resources;
@@ -504,6 +502,7 @@
 		FFDAF27BEEB8B95DE58A89CD /* GoPilates */ = {
 			isa = PBXGroup;
 			children = (
+				6295D74B0B7B5ABFF13BAF87 /* GoPilates-Bridging-Header.h */,
 				6912D7369F2BFB72CF9FCEC5 /* GoPilates.entitlements */,
 				FE794E31F27F00153841298B /* App */,
 				04C64BF28C910C741FA3B2DA /* Dashboard */,
@@ -536,10 +535,10 @@
 			);
 			name = GoPilates;
 			packageProductDependencies = (
-				AF6DB7EB2F5F794A00287C55 /* Lottie */,
-				AF2402E12F5F96A300C13D44 /* ReceiptParser */,
-				AF2402E32F5F96A300C13D44 /* RevenueCat */,
-				AF2402E52F5F96A300C13D44 /* RevenueCatUI */,
+				E0A8801A7D601A8D5D63D053 /* Lottie */,
+				2D14AD12C4F7BA56247E64EB /* RevenueCat */,
+				7BAD65C98D69049FAC8A8BB7 /* RevenueCatUI */,
+				A5B5B8CA3452D96BA35686D8 /* TenjinSDK */,
 			);
 			productName = GoPilates;
 			productReference = 4EE2448D8AC8120870BB215B /* GoPilates.app */;
@@ -552,15 +551,16 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
-				LastUpgradeCheck = 1520;
+				LastUpgradeCheck = 1600;
 				TargetAttributes = {
 					4F61F2033E96962809ADAFC8 = {
+						DevelopmentTeam = ULHJAB7ZT3;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = "[\"com.apple.InAppPurchase\": [\"enabled\": 1], \"com.apple.HealthKit\": [\"enabled\": 1]]";
 					};
 				};
 			};
 			buildConfigurationList = 1DC604BD4376C38D2C5B26FD /* Build configuration list for PBXProject "GoPilates" */;
-			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -568,10 +568,14 @@
 				en,
 			);
 			mainGroup = C2DA8D785967212CF0F6772C;
+			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				AF6DB7EA2F5F794A00287C55 /* XCRemoteSwiftPackageReference "lottie-ios" */,
-				AF2402E02F5F96A300C13D44 /* XCRemoteSwiftPackageReference "purchases-ios" */,
+				74BA1CA6217693F142835118 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				DECEA18DBC01478F5B405CB5 /* XCRemoteSwiftPackageReference "purchases-ios-spm" */,
+				3FB6F8FE8E15220D0A5844E1 /* XCRemoteSwiftPackageReference "tenjin-ios-sdk" */,
 			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = BB9DB153606619A93C97A650 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -702,6 +706,7 @@
 				EA814AA51128E00DC172CC49 /* SharedOnboardingComponents.swift in Sources */,
 				104BCE00B186860EE5FE6264 /* StreakCalendarView.swift in Sources */,
 				9D69191E5392933A06144861 /* SubscriptionManager.swift in Sources */,
+				D04DA40E45E395FEAEE80BCA /* TenjinService.swift in Sources */,
 				E4DD5289BBD2D53FF609ECAC /* UserProfile.swift in Sources */,
 				9B7287E094AA8F39B68E86EE /* VODLibraryView.swift in Sources */,
 				4322821B5DFBF7A5BBF61F4E /* WorkoutPlan.swift in Sources */,
@@ -719,19 +724,25 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = GoPilates/GoPilates.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 100;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ULHJAB7ZT3;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = GoPilates/Resources/Info.plist;
-				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				MARKETING_VERSION = 1.0.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.gopilates.app;
 				PRODUCT_NAME = GoPilates;
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "GoPilates/GoPilates-Bridging-Header.h";
 				SWIFT_VERSION = 5.9;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -739,8 +750,62 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -750,18 +815,24 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = GoPilates/GoPilates.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 100;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ULHJAB7ZT3;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = GoPilates/Resources/Info.plist;
-				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				MARKETING_VERSION = 1.0.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.gopilates.app;
 				PRODUCT_NAME = GoPilates;
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "GoPilates/GoPilates-Bridging-Header.h";
 				SWIFT_VERSION = 5.9;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -769,8 +840,55 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -798,43 +916,51 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		AF2402E02F5F96A300C13D44 /* XCRemoteSwiftPackageReference "purchases-ios" */ = {
+		3FB6F8FE8E15220D0A5844E1 /* XCRemoteSwiftPackageReference "tenjin-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/RevenueCat/purchases-ios.git";
+			repositoryURL = "https://github.com/tenjin/tenjin-ios-sdk.git";
 			requirement = {
-				kind = exactVersion;
-				version = 5.20.2;
+				branch = master;
+				kind = branch;
 			};
 		};
-		AF6DB7EA2F5F794A00287C55 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+		74BA1CA6217693F142835118 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
 			requirement = {
-				kind = exactVersion;
-				version = 4.5.2;
+				kind = upToNextMinorVersion;
+				minimumVersion = 4.5.0;
+			};
+		};
+		DECEA18DBC01478F5B405CB5 /* XCRemoteSwiftPackageReference "purchases-ios-spm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RevenueCat/purchases-ios-spm.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 5.16.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		AF2402E12F5F96A300C13D44 /* ReceiptParser */ = {
+		2D14AD12C4F7BA56247E64EB /* RevenueCat */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = AF2402E02F5F96A300C13D44 /* XCRemoteSwiftPackageReference "purchases-ios" */;
-			productName = ReceiptParser;
-		};
-		AF2402E32F5F96A300C13D44 /* RevenueCat */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = AF2402E02F5F96A300C13D44 /* XCRemoteSwiftPackageReference "purchases-ios" */;
+			package = DECEA18DBC01478F5B405CB5 /* XCRemoteSwiftPackageReference "purchases-ios-spm" */;
 			productName = RevenueCat;
 		};
-		AF2402E52F5F96A300C13D44 /* RevenueCatUI */ = {
+		7BAD65C98D69049FAC8A8BB7 /* RevenueCatUI */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = AF2402E02F5F96A300C13D44 /* XCRemoteSwiftPackageReference "purchases-ios" */;
+			package = DECEA18DBC01478F5B405CB5 /* XCRemoteSwiftPackageReference "purchases-ios-spm" */;
 			productName = RevenueCatUI;
 		};
-		AF6DB7EB2F5F794A00287C55 /* Lottie */ = {
+		A5B5B8CA3452D96BA35686D8 /* TenjinSDK */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = AF6DB7EA2F5F794A00287C55 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			package = 3FB6F8FE8E15220D0A5844E1 /* XCRemoteSwiftPackageReference "tenjin-ios-sdk" */;
+			productName = TenjinSDK;
+		};
+		E0A8801A7D601A8D5D63D053 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 74BA1CA6217693F142835118 /* XCRemoteSwiftPackageReference "lottie-ios" */;
 			productName = Lottie;
 		};
 /* End XCSwiftPackageProductDependency section */

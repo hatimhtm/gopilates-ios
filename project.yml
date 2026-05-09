@@ -13,6 +13,9 @@ packages:
   RevenueCat:
     url: https://github.com/RevenueCat/purchases-ios-spm.git
     minorVersion: 5.16.0
+  TenjinSDK:
+    url: https://github.com/tenjin/tenjin-ios-sdk.git
+    branch: master
     
 targets:
   GoPilates:
@@ -48,6 +51,7 @@ targets:
         CODE_SIGN_STYLE: Automatic
         DEVELOPMENT_TEAM: ULHJAB7ZT3
         ENABLE_PREVIEWS: YES
+        SWIFT_OBJC_BRIDGING_HEADER: GoPilates/GoPilates-Bridging-Header.h
       configs:
         Debug:
           ONLY_ACTIVE_ARCH: YES
@@ -59,3 +63,5 @@ targets:
         product: RevenueCat
       - package: RevenueCat
         product: RevenueCatUI
+      - package: TenjinSDK
+        product: TenjinSDK

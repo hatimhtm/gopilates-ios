@@ -29,5 +29,8 @@ struct GoPilatesApp: App {
                     .environmentObject(userProfile)
             }
         }
+        .task {
+            await TenjinService.shared.initialize()
+        }
     }
 }

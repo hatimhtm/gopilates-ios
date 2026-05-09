@@ -50,5 +50,9 @@
 	</array>
 	<key>UIUserInterfaceStyle</key>
 	<string>Light</string>
+	<key>NSUserTrackingUsageDescription</key>
+	<string>Nous utilisons vos données pour vous proposer des publicités pertinentes et améliorer votre expérience.</string>
+	<key>NSAdvertisingAttributionReportEndpoint</key>
+	<string>https://tenjin-skan.com</string>
 </dict>
 </plist>

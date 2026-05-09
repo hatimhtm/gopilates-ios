@@ -177,6 +177,7 @@ struct OnboardingPaywallView: View {
                 let success = try await SubscriptionManager.shared.purchase(package: package)
                 isPurchasing = false
                 if success {
+                    TenjinService.shared.trackSubscription()
                     if reminderEnabled {
                         await NotificationManager.shared.scheduleTrialEndReminder()
                     } else {
