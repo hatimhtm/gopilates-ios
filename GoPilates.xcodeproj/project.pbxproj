@@ -172,7 +172,6 @@
 		5F4AD612512B9F910FEA526E /* OnboardingBodyZoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingBodyZoneView.swift; sourceTree = "<group>"; };
 		5F95509DD00E663311C2FDB3 /* OnboardingHeightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingHeightView.swift; sourceTree = "<group>"; };
 		622C53E46EBB09440FBDB8C8 /* exercise_dead_bug.mp4 */ = {isa = PBXFileReference; path = exercise_dead_bug.mp4; sourceTree = "<group>"; };
-		6295D74B0B7B5ABFF13BAF87 /* GoPilates-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GoPilates-Bridging-Header.h"; sourceTree = "<group>"; };
 		6912D7369F2BFB72CF9FCEC5 /* GoPilates.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GoPilates.entitlements; sourceTree = "<group>"; };
 		6DE86EDB9FB85EBFDEBEC1A0 /* exercise_thoracic_rotation.mp4 */ = {isa = PBXFileReference; path = exercise_thoracic_rotation.mp4; sourceTree = "<group>"; };
 		721DD89E1BFF2355AEB4299C /* DesignSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSystem.swift; sourceTree = "<group>"; };
@@ -502,7 +501,6 @@
 		FFDAF27BEEB8B95DE58A89CD /* GoPilates */ = {
 			isa = PBXGroup;
 			children = (
-				6295D74B0B7B5ABFF13BAF87 /* GoPilates-Bridging-Header.h */,
 				6912D7369F2BFB72CF9FCEC5 /* GoPilates.entitlements */,
 				FE794E31F27F00153841298B /* App */,
 				04C64BF28C910C741FA3B2DA /* Dashboard */,
@@ -556,7 +554,7 @@
 					4F61F2033E96962809ADAFC8 = {
 						DevelopmentTeam = ULHJAB7ZT3;
 						ProvisioningStyle = Automatic;
-						SystemCapabilities = "[\"com.apple.HealthKit\": [\"enabled\": 1], \"com.apple.InAppPurchase\": [\"enabled\": 1]]";
+						SystemCapabilities = "[\"com.apple.InAppPurchase\": [\"enabled\": 1], \"com.apple.HealthKit\": [\"enabled\": 1]]";
 					};
 				};
 			};
@@ -740,7 +738,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.gopilates.app;
 				PRODUCT_NAME = GoPilates;
 				SDKROOT = iphoneos;
-				SWIFT_OBJC_BRIDGING_HEADER = "GoPilates/GoPilates-Bridging-Header.h";
 				SWIFT_VERSION = 5.9;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -830,7 +827,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.gopilates.app;
 				PRODUCT_NAME = GoPilates;
 				SDKROOT = iphoneos;
-				SWIFT_OBJC_BRIDGING_HEADER = "GoPilates/GoPilates-Bridging-Header.h";
 				SWIFT_VERSION = 5.9;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

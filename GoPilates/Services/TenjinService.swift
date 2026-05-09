@@ -1,5 +1,6 @@
 import Foundation
 import AppTrackingTransparency
+import TenjinSDK
 
 // MARK: - Configuration
 
