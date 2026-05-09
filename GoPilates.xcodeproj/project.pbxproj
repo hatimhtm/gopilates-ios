@@ -556,7 +556,7 @@
 					4F61F2033E96962809ADAFC8 = {
 						DevelopmentTeam = ULHJAB7ZT3;
 						ProvisioningStyle = Automatic;
-						SystemCapabilities = "[\"com.apple.InAppPurchase\": [\"enabled\": 1], \"com.apple.HealthKit\": [\"enabled\": 1]]";
+						SystemCapabilities = "[\"com.apple.HealthKit\": [\"enabled\": 1], \"com.apple.InAppPurchase\": [\"enabled\": 1]]";
 					};
 				};
 			};
@@ -937,7 +937,7 @@
 			repositoryURL = "https://github.com/RevenueCat/purchases-ios-spm.git";
 			requirement = {
 				kind = upToNextMinorVersion;
-				minimumVersion = 5.16.0;
+				minimumVersion = 5.20.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */

@@ -12,7 +12,7 @@ packages:
     minorVersion: 4.5.0
   RevenueCat:
     url: https://github.com/RevenueCat/purchases-ios-spm.git
-    minorVersion: 5.16.0
+    minorVersion: 5.20.0
   TenjinSDK:
     url: https://github.com/tenjin/tenjin-ios-sdk.git
     branch: master
