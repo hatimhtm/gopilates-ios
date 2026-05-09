@@ -64,7 +64,7 @@ final class TenjinService {
 
     func trackEvent(_ eventName: String, value: Int? = nil) {
         if let value = value {
-            TenjinSDK.sendEvent(withName: eventName, andEventValue: String(value))
+            TenjinSDK.sendEvent(withName: eventName, andValue: String(value))
         } else {
             TenjinSDK.sendEvent(withName: eventName)
         }
