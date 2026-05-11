@@ -11,6 +11,7 @@
   <img src="https://img.shields.io/badge/iOS-17+-1A1A1A?style=for-the-badge&logo=apple&logoColor=CCFF00" alt="iOS 17+" />
   <img src="https://img.shields.io/badge/Swift-5-1A1A1A?style=for-the-badge&logo=swift&logoColor=CCFF00" alt="Swift" />
   <img src="https://img.shields.io/badge/SwiftUI-1A1A1A?style=for-the-badge&logo=swift&logoColor=CCFF00" alt="SwiftUI" />
+  <a href="LICENSE"><img src="https://img.shields.io/badge/LICENSE-VIEW_ONLY-1A1A1A?style=for-the-badge&labelColor=1A1A1A&color=CCFF00" alt="View-only license" /></a>
 </p>
 
 <p align="center">
@@ -114,6 +115,23 @@ Requires Xcode 16+. Runs on iOS 17+ devices (project deployment target is 18.0; 
 ### `/// STATUS`
 
 🟢 **Live on the [App Store](https://apps.apple.com/us/app/gopilates-app/id6760300479)**, shipped to production. Engagement complete; this repo is the public archive of the build.
+
+---
+
+### `/// LICENSE`
+
+[All Rights Reserved — Source-Visible](LICENSE).
+
+This is **not** an open-source repository. The code is on GitHub for the
+limited purpose of letting you **read it** — evaluate the engineering,
+study the architecture, see the build quality. That's it.
+
+**Not allowed:** running it, deploying it, copying it into another project,
+redistributing it, modifying it, sublicensing it, or commercially
+exploiting it — even for free. "Free" doesn't equal "permitted."
+
+If you want a commercial licence or a custom build,
+[get in touch](mailto:hatimelhassak.official@gmail.com).
 
 ---
 
