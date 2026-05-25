@@ -1,10 +1,18 @@
 import SwiftUI
+import StoreKit
 
 struct OnboardingFlow: View {
     @State private var data = OnboardingData()
     @EnvironmentObject var userProfile: UserProfile
     @State private var currentScreen: Int = 0
     @State private var goForward: Bool = true
+
+    // Apple's native "rate this app" prompt (StoreKit). Fired once, around the
+    // quarter mark of onboarding, to drive App Store ratings. Apple decides
+    // whether it actually appears (rate-limited to ~3 prompts/year per device).
+    @Environment(\.requestReview) private var requestReview
+    @State private var didRequestReview = false
+    private let reviewPromptScreen = 10 // ~25% through the 40-screen funnel
 
     private let totalScreens = 40 // 0-39 inclusive (added name screen)
 
@@ -45,6 +53,16 @@ struct OnboardingFlow: View {
         }
         .environment(data)
         .animation(.easeInOut(duration: 0.35), value: currentScreen)
+        .onChange(of: currentScreen) { _, newValue in
+            // Trigger Apple's native review prompt once the user reaches the
+            // quarter mark. Small delay lets the screen transition settle so
+            // the system sheet isn't swallowed by the in-flight animation.
+            guard !didRequestReview, newValue >= reviewPromptScreen else { return }
+            didRequestReview = true
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.8) {
+                requestReview()
+            }
+        }
     }
 
     private func goNext() {
